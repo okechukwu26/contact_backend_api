@@ -1,0 +1,29 @@
+2023-08-02 13:02:24:224 [31merror[39m: [31mMongodb connection error {"code":"ECONNREFUSED","syscall":"querySrv","hostname":"_mongodb._tcp.cluster0.d8bojru.mongodb.net"}[39m
+2023-08-02 13:02:35:235 [31merror[39m: [31mMongodb connection error {"code":"ECONNREFUSED","syscall":"querySrv","hostname":"_mongodb._tcp.cluster0.d8bojru.mongodb.net"}[39m
+2023-08-02 13:03:47:347 [31merror[39m: [31mMongodb connection error {"code":"ECONNREFUSED","syscall":"querySrv","hostname":"_mongodb._tcp.cluster0.d8bojru.mongodb.net"}[39m
+2023-08-02 13:07:13:713 [31merror[39m: [31mMongodb connection error {"code":"ECONNREFUSED","syscall":"querySrv","hostname":"_mongodb._tcp.cluster0.d8bojru.mongodb.net"}[39m
+2023-08-02 13:08:43:843 [31merror[39m: [31mMongodb connection error {"code":"ECONNREFUSED","syscall":"querySrv","hostname":"_mongodb._tcp.cluster0.d8bojru.mongodb.net"}[39m
+2023-08-02 14:20:34:2034 [31merror[39m: [31mError status 400[39m
+2023-08-02 14:21:58:2158 [31merror[39m: [31mError status 400[39m
+2023-08-02 14:25:59:2559 [31merror[39m: [31mError status 400[39m
+2023-08-02 14:26:58:2658 [31merror[39m: [31mError status 400[39m
+2023-08-02 23:39:01:391 [31merror[39m: [31mError status 400[39m
+2023-08-02 23:39:01:391 [31merror[39m: [31mError status 400[39m
+2023-08-02 23:40:19:4019 [31merror[39m: [31mError status 400[39m
+2023-08-02 23:40:31:4031 [31merror[39m: [31mError status 400[39m
+2023-08-02 23:40:42:4042 [31merror[39m: [31mError status 400[39m
+2023-08-02 23:40:55:4055 [31merror[39m: [31mError status 400[39m
+2023-08-02 23:41:00:410 [31merror[39m: [31mError status 400[39m
+2023-08-02 23:41:17:4117 [31merror[39m: [31mError status 400[39m
+2023-08-02 23:41:23:4123 [31merror[39m: [31mError status 400[39m
+2023-08-02 23:43:34:4334 [31merror[39m: [31mError status 400[39m
+2023-08-02 23:43:54:4354 [31merror[39m: [31mError status 400[39m
+2023-08-02 23:45:43:4543 [31merror[39m: [31mAuthentication failed, no token was provided[39m
+2023-08-02 23:45:43:4543 [31merror[39m: [31mError status 403[39m
+2023-08-02 23:47:41:4741 [31merror[39m: [31mError status 400[39m
+2023-08-02 23:48:01:481 [31merror[39m: [31mError status 400[39m
+2023-08-02 23:48:16:4816 [31merror[39m: [31mError status 400[39m
+2023-08-02 23:49:09:499 [31merror[39m: [31muser name already exist[39m
+2023-08-02 23:49:09:499 [31merror[39m: [31mError status 400[39m
+2023-08-02 23:51:01:511 [31merror[39m: [31mAuthentication failed, no token was provided[39m
+2023-08-02 23:51:01:511 [31merror[39m: [31mError status 403[39m

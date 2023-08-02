@@ -1,0 +1,3939 @@
+2023-08-02 11:19:30:1930 [32minfo[39m: [32m[[39m
+[32m  { path: '/', methods: [ 'GET' ], middlewares: [ 'anonymous' ] },[39m
+[32m  {[39m
+[32m    path: '/api/auth/landlord',[39m
+[32m    methods: [ 'POST' ],[39m
+[32m    middlewares: [ 'middleware', 'middleware', 'anonymous' ][39m
+[32m  },[39m
+[32m  {[39m
+[32m    path: '/api/auth/tenant',[39m
+[32m    methods: [ 'POST' ],[39m
+[32m    middlewares: [ 'middleware', 'middleware', 'middleware', 'anonymous' ][39m
+[32m  },[39m
+[32m  {[39m
+[32m    path: '/api/auth/signin',[39m
+[32m    methods: [ 'POST' ],[39m
+[32m    middlewares: [ 'middleware', 'middleware', 'anonymous' ][39m
+[32m  },[39m
+[32m  {[39m
+[32m    path: '/api/auth/send_verification_code',[39m
+[32m    methods: [ 'POST' ],[39m
+[32m    middlewares: [ 'anonymous' ][39m
+[32m  },[39m
+[32m  {[39m
+[32m    path: '/api/auth/verify_code',[39m
+[32m    methods: [ 'POST' ],[39m
+[32m    middlewares: [ 'anonymous' ][39m
+[32m  },[39m
+[32m  {[39m
+[32m    path: '/api/auth/upload',[39m
+[32m    methods: [ 'POST' ],[39m
+[32m    middlewares: [ 'multerMiddleware', 'anonymous' ][39m
+[32m  },[39m
+[32m  {[39m
+[32m    path: '/api/user/profile',[39m
+[32m    methods: [ 'POST' ],[39m
+[32m    middlewares: [ 'anonymous' ][39m
+[32m  },[39m
+[32m  {[39m
+[32m    path: '/api/property/create',[39m
+[32m    methods: [ 'POST' ],[39m
+[32m    middlewares: [[39m
+[32m      'anonymous',[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'anonymous'[39m
+[32m    ][39m
+[32m  },[39m
+[32m  {[39m
+[32m    path: '/api/property/myProperty',[39m
+[32m    methods: [ 'GET' ],[39m
+[32m    middlewares: [ 'anonymous' ][39m
+[32m  },[39m
+[32m  {[39m
+[32m    path: '/api/flat/update',[39m
+[32m    methods: [ 'PUT' ],[39m
+[32m    middlewares: [ 'anonymous', 'anonymous' ][39m
+[32m  },[39m
+[32m  {[39m
+[32m    path: '/api/flat/remove_tenant/:id',[39m
+[32m    methods: [ 'PUT' ],[39m
+[32m    middlewares: [ 'anonymous', 'anonymous' ][39m
+[32m  },[39m
+[32m  {[39m
+[32m    path: '/api/flat/myFlat',[39m
+[32m    methods: [ 'GET' ],[39m
+[32m    middlewares: [ 'anonymous', 'anonymous' ][39m
+[32m  },[39m
+[32m  {[39m
+[32m    path: '/api/flat',[39m
+[32m    methods: [ 'POST' ],[39m
+[32m    middlewares: [[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'anonymous'[39m
+[32m    ][39m
+[32m  },[39m
+[32m  {[39m
+[32m    path: '/api/flat/assign_service',[39m
+[32m    methods: [ 'POST' ],[39m
+[32m    middlewares: [ 'anonymous', 'anonymous' ][39m
+[32m  },[39m
+[32m  {[39m
+[32m    path: '/api/media/landlord',[39m
+[32m    methods: [ 'POST' ],[39m
+[32m    middlewares: [ 'middleware', 'middleware', 'anonymous' ][39m
+[32m  },[39m
+[32m  {[39m
+[32m    path: '/api/media/tenant',[39m
+[32m    methods: [ 'POST' ],[39m
+[32m    middlewares: [ 'middleware', 'middleware', 'middleware', 'anonymous' ][39m
+[32m  },[39m
+[32m  {[39m
+[32m    path: '/api/media/signin',[39m
+[32m    methods: [ 'POST' ],[39m
+[32m    middlewares: [ 'middleware', 'middleware', 'anonymous' ][39m
+[32m  },[39m
+[32m  {[39m
+[32m    path: '/api/media/send_verification_code',[39m
+[32m    methods: [ 'POST' ],[39m
+[32m    middlewares: [ 'anonymous' ][39m
+[32m  },[39m
+[32m  {[39m
+[32m    path: '/api/media/verify_code',[39m
+[32m    methods: [ 'POST' ],[39m
+[32m    middlewares: [ 'anonymous' ][39m
+[32m  },[39m
+[32m  {[39m
+[32m    path: '/api/media/upload',[39m
+[32m    methods: [ 'POST' ],[39m
+[32m    middlewares: [ 'multerMiddleware', 'anonymous' ][39m
+[32m  },[39m
+[32m  {[39m
+[32m    path: '/api/complian',[39m
+[32m    methods: [ 'POST', 'GET' ],[39m
+[32m    middlewares: [[39m
+[32m      'anonymous',[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'anonymous'[39m
+[32m    ][39m
+[32m  },[39m
+[32m  {[39m
+[32m    path: '/api/complian/:id',[39m
+[32m    methods: [ 'DELETE' ],[39m
+[32m    middlewares: [ 'anonymous', 'anonymous' ][39m
+[32m  },[39m
+[32m  {[39m
+[32m    path: '/api/comment',[39m
+[32m    methods: [ 'POST', 'GET' ],[39m
+[32m    middlewares: [[39m
+[32m      'anonymous',[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'anonymous'[39m
+[32m    ][39m
+[32m  },[39m
+[32m  {[39m
+[32m    path: '/api/comment/:id',[39m
+[32m    methods: [ 'DELETE' ],[39m
+[32m    middlewares: [ 'anonymous', 'anonymous' ][39m
+[32m  },[39m
+[32m  {[39m
+[32m    path: '/api/service_charge',[39m
+[32m    methods: [ 'POST', 'GET' ],[39m
+[32m    middlewares: [ 'middleware', 'anonymous' ][39m
+[32m  },[39m
+[32m  {[39m
+[32m    path: '/api/service_charge/:id',[39m
+[32m    methods: [ 'DELETE' ],[39m
+[32m    middlewares: [ 'anonymous' ][39m
+[32m  },[39m
+[32m  {[39m
+[32m    path: '/api/payment',[39m
+[32m    methods: [ 'POST' ],[39m
+[32m    middlewares: [ 'anonymous' ][39m
+[32m  },[39m
+[32m  {[39m
+[32m    path: '/api/contactAuth/signup',[39m
+[32m    methods: [ 'POST' ],[39m
+[32m    middlewares: [[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'anonymous'[39m
+[32m    ][39m
+[32m  },[39m
+[32m  {[39m
+[32m    path: '/api/contactAuth/signin',[39m
+[32m    methods: [ 'POST' ],[39m
+[32m    middlewares: [ 'middleware', 'middleware', 'anonymous' ][39m
+[32m  },[39m
+[32m  {[39m
+[32m    path: '/api/contact/create',[39m
+[32m    methods: [ 'POST' ],[39m
+[32m    middlewares: [[39m
+[32m      'anonymous',[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'anonymous'[39m
+[32m    ][39m
+[32m  },[39m
+[32m  {[39m
+[32m    path: '/api/contact',[39m
+[32m    methods: [ 'GET' ],[39m
+[32m    middlewares: [ 'anonymous', 'anonymous' ][39m
+[32m  },[39m
+[32m  {[39m
+[32m    path: '/api/contact/:id',[39m
+[32m    methods: [ 'PUT', 'DELETE' ],[39m
+[32m    middlewares: [ 'anonymous', 'anonymous' ][39m
+[32m  }[39m
+[32m][39m
+2023-08-02 11:19:30:1930 [32minfo[39m: [32mserver  is listening on port 5000[39m
+2023-08-02 11:19:33:1933 [32minfo[39m: [32mdatabase has been connected successfully to "ac-ngmjyow-shard-00-01.d8bojru.mongodb.net"[39m
+2023-08-02 13:02:24:224 [32minfo[39m: [32m[[39m
+[32m  { path: '/', methods: [ 'GET' ], middlewares: [ 'anonymous' ] },[39m
+[32m  {[39m
+[32m    path: '/api/auth/landlord',[39m
+[32m    methods: [ 'POST' ],[39m
+[32m    middlewares: [ 'middleware', 'middleware', 'anonymous' ][39m
+[32m  },[39m
+[32m  {[39m
+[32m    path: '/api/auth/tenant',[39m
+[32m    methods: [ 'POST' ],[39m
+[32m    middlewares: [ 'middleware', 'middleware', 'middleware', 'anonymous' ][39m
+[32m  },[39m
+[32m  {[39m
+[32m    path: '/api/auth/signin',[39m
+[32m    methods: [ 'POST' ],[39m
+[32m    middlewares: [ 'middleware', 'middleware', 'anonymous' ][39m
+[32m  },[39m
+[32m  {[39m
+[32m    path: '/api/auth/send_verification_code',[39m
+[32m    methods: [ 'POST' ],[39m
+[32m    middlewares: [ 'anonymous' ][39m
+[32m  },[39m
+[32m  {[39m
+[32m    path: '/api/auth/verify_code',[39m
+[32m    methods: [ 'POST' ],[39m
+[32m    middlewares: [ 'anonymous' ][39m
+[32m  },[39m
+[32m  {[39m
+[32m    path: '/api/auth/upload',[39m
+[32m    methods: [ 'POST' ],[39m
+[32m    middlewares: [ 'multerMiddleware', 'anonymous' ][39m
+[32m  },[39m
+[32m  {[39m
+[32m    path: '/api/user/profile',[39m
+[32m    methods: [ 'POST' ],[39m
+[32m    middlewares: [ 'anonymous' ][39m
+[32m  },[39m
+[32m  {[39m
+[32m    path: '/api/property/create',[39m
+[32m    methods: [ 'POST' ],[39m
+[32m    middlewares: [[39m
+[32m      'anonymous',[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'anonymous'[39m
+[32m    ][39m
+[32m  },[39m
+[32m  {[39m
+[32m    path: '/api/property/myProperty',[39m
+[32m    methods: [ 'GET' ],[39m
+[32m    middlewares: [ 'anonymous' ][39m
+[32m  },[39m
+[32m  {[39m
+[32m    path: '/api/flat/update',[39m
+[32m    methods: [ 'PUT' ],[39m
+[32m    middlewares: [ 'anonymous', 'anonymous' ][39m
+[32m  },[39m
+[32m  {[39m
+[32m    path: '/api/flat/remove_tenant/:id',[39m
+[32m    methods: [ 'PUT' ],[39m
+[32m    middlewares: [ 'anonymous', 'anonymous' ][39m
+[32m  },[39m
+[32m  {[39m
+[32m    path: '/api/flat/myFlat',[39m
+[32m    methods: [ 'GET' ],[39m
+[32m    middlewares: [ 'anonymous', 'anonymous' ][39m
+[32m  },[39m
+[32m  {[39m
+[32m    path: '/api/flat',[39m
+[32m    methods: [ 'POST' ],[39m
+[32m    middlewares: [[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'anonymous'[39m
+[32m    ][39m
+[32m  },[39m
+[32m  {[39m
+[32m    path: '/api/flat/assign_service',[39m
+[32m    methods: [ 'POST' ],[39m
+[32m    middlewares: [ 'anonymous', 'anonymous' ][39m
+[32m  },[39m
+[32m  {[39m
+[32m    path: '/api/media/landlord',[39m
+[32m    methods: [ 'POST' ],[39m
+[32m    middlewares: [ 'middleware', 'middleware', 'anonymous' ][39m
+[32m  },[39m
+[32m  {[39m
+[32m    path: '/api/media/tenant',[39m
+[32m    methods: [ 'POST' ],[39m
+[32m    middlewares: [ 'middleware', 'middleware', 'middleware', 'anonymous' ][39m
+[32m  },[39m
+[32m  {[39m
+[32m    path: '/api/media/signin',[39m
+[32m    methods: [ 'POST' ],[39m
+[32m    middlewares: [ 'middleware', 'middleware', 'anonymous' ][39m
+[32m  },[39m
+[32m  {[39m
+[32m    path: '/api/media/send_verification_code',[39m
+[32m    methods: [ 'POST' ],[39m
+[32m    middlewares: [ 'anonymous' ][39m
+[32m  },[39m
+[32m  {[39m
+[32m    path: '/api/media/verify_code',[39m
+[32m    methods: [ 'POST' ],[39m
+[32m    middlewares: [ 'anonymous' ][39m
+[32m  },[39m
+[32m  {[39m
+[32m    path: '/api/media/upload',[39m
+[32m    methods: [ 'POST' ],[39m
+[32m    middlewares: [ 'multerMiddleware', 'anonymous' ][39m
+[32m  },[39m
+[32m  {[39m
+[32m    path: '/api/complian',[39m
+[32m    methods: [ 'POST', 'GET' ],[39m
+[32m    middlewares: [[39m
+[32m      'anonymous',[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'anonymous'[39m
+[32m    ][39m
+[32m  },[39m
+[32m  {[39m
+[32m    path: '/api/complian/:id',[39m
+[32m    methods: [ 'DELETE' ],[39m
+[32m    middlewares: [ 'anonymous', 'anonymous' ][39m
+[32m  },[39m
+[32m  {[39m
+[32m    path: '/api/comment',[39m
+[32m    methods: [ 'POST', 'GET' ],[39m
+[32m    middlewares: [[39m
+[32m      'anonymous',[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'anonymous'[39m
+[32m    ][39m
+[32m  },[39m
+[32m  {[39m
+[32m    path: '/api/comment/:id',[39m
+[32m    methods: [ 'DELETE' ],[39m
+[32m    middlewares: [ 'anonymous', 'anonymous' ][39m
+[32m  },[39m
+[32m  {[39m
+[32m    path: '/api/service_charge',[39m
+[32m    methods: [ 'POST', 'GET' ],[39m
+[32m    middlewares: [ 'middleware', 'anonymous' ][39m
+[32m  },[39m
+[32m  {[39m
+[32m    path: '/api/service_charge/:id',[39m
+[32m    methods: [ 'DELETE' ],[39m
+[32m    middlewares: [ 'anonymous' ][39m
+[32m  },[39m
+[32m  {[39m
+[32m    path: '/api/payment',[39m
+[32m    methods: [ 'POST' ],[39m
+[32m    middlewares: [ 'anonymous' ][39m
+[32m  },[39m
+[32m  {[39m
+[32m    path: '/api/contactAuth/signup',[39m
+[32m    methods: [ 'POST' ],[39m
+[32m    middlewares: [[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'anonymous'[39m
+[32m    ][39m
+[32m  },[39m
+[32m  {[39m
+[32m    path: '/api/contactAuth/signin',[39m
+[32m    methods: [ 'POST' ],[39m
+[32m    middlewares: [ 'middleware', 'middleware', 'anonymous' ][39m
+[32m  },[39m
+[32m  {[39m
+[32m    path: '/api/contact/create',[39m
+[32m    methods: [ 'POST' ],[39m
+[32m    middlewares: [[39m
+[32m      'anonymous',[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'anonymous'[39m
+[32m    ][39m
+[32m  },[39m
+[32m  {[39m
+[32m    path: '/api/contact',[39m
+[32m    methods: [ 'GET' ],[39m
+[32m    middlewares: [ 'anonymous', 'anonymous' ][39m
+[32m  },[39m
+[32m  {[39m
+[32m    path: '/api/contact/:id',[39m
+[32m    methods: [ 'PUT', 'DELETE' ],[39m
+[32m    middlewares: [ 'anonymous', 'anonymous' ][39m
+[32m  }[39m
+[32m][39m
+2023-08-02 13:02:35:235 [32minfo[39m: [32m[[39m
+[32m  { path: '/', methods: [ 'GET' ], middlewares: [ 'anonymous' ] },[39m
+[32m  {[39m
+[32m    path: '/api/auth/landlord',[39m
+[32m    methods: [ 'POST' ],[39m
+[32m    middlewares: [ 'middleware', 'middleware', 'anonymous' ][39m
+[32m  },[39m
+[32m  {[39m
+[32m    path: '/api/auth/tenant',[39m
+[32m    methods: [ 'POST' ],[39m
+[32m    middlewares: [ 'middleware', 'middleware', 'middleware', 'anonymous' ][39m
+[32m  },[39m
+[32m  {[39m
+[32m    path: '/api/auth/signin',[39m
+[32m    methods: [ 'POST' ],[39m
+[32m    middlewares: [ 'middleware', 'middleware', 'anonymous' ][39m
+[32m  },[39m
+[32m  {[39m
+[32m    path: '/api/auth/send_verification_code',[39m
+[32m    methods: [ 'POST' ],[39m
+[32m    middlewares: [ 'anonymous' ][39m
+[32m  },[39m
+[32m  {[39m
+[32m    path: '/api/auth/verify_code',[39m
+[32m    methods: [ 'POST' ],[39m
+[32m    middlewares: [ 'anonymous' ][39m
+[32m  },[39m
+[32m  {[39m
+[32m    path: '/api/auth/upload',[39m
+[32m    methods: [ 'POST' ],[39m
+[32m    middlewares: [ 'multerMiddleware', 'anonymous' ][39m
+[32m  },[39m
+[32m  {[39m
+[32m    path: '/api/user/profile',[39m
+[32m    methods: [ 'POST' ],[39m
+[32m    middlewares: [ 'anonymous' ][39m
+[32m  },[39m
+[32m  {[39m
+[32m    path: '/api/property/create',[39m
+[32m    methods: [ 'POST' ],[39m
+[32m    middlewares: [[39m
+[32m      'anonymous',[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'anonymous'[39m
+[32m    ][39m
+[32m  },[39m
+[32m  {[39m
+[32m    path: '/api/property/myProperty',[39m
+[32m    methods: [ 'GET' ],[39m
+[32m    middlewares: [ 'anonymous' ][39m
+[32m  },[39m
+[32m  {[39m
+[32m    path: '/api/flat/update',[39m
+[32m    methods: [ 'PUT' ],[39m
+[32m    middlewares: [ 'anonymous', 'anonymous' ][39m
+[32m  },[39m
+[32m  {[39m
+[32m    path: '/api/flat/remove_tenant/:id',[39m
+[32m    methods: [ 'PUT' ],[39m
+[32m    middlewares: [ 'anonymous', 'anonymous' ][39m
+[32m  },[39m
+[32m  {[39m
+[32m    path: '/api/flat/myFlat',[39m
+[32m    methods: [ 'GET' ],[39m
+[32m    middlewares: [ 'anonymous', 'anonymous' ][39m
+[32m  },[39m
+[32m  {[39m
+[32m    path: '/api/flat',[39m
+[32m    methods: [ 'POST' ],[39m
+[32m    middlewares: [[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'anonymous'[39m
+[32m    ][39m
+[32m  },[39m
+[32m  {[39m
+[32m    path: '/api/flat/assign_service',[39m
+[32m    methods: [ 'POST' ],[39m
+[32m    middlewares: [ 'anonymous', 'anonymous' ][39m
+[32m  },[39m
+[32m  {[39m
+[32m    path: '/api/media/landlord',[39m
+[32m    methods: [ 'POST' ],[39m
+[32m    middlewares: [ 'middleware', 'middleware', 'anonymous' ][39m
+[32m  },[39m
+[32m  {[39m
+[32m    path: '/api/media/tenant',[39m
+[32m    methods: [ 'POST' ],[39m
+[32m    middlewares: [ 'middleware', 'middleware', 'middleware', 'anonymous' ][39m
+[32m  },[39m
+[32m  {[39m
+[32m    path: '/api/media/signin',[39m
+[32m    methods: [ 'POST' ],[39m
+[32m    middlewares: [ 'middleware', 'middleware', 'anonymous' ][39m
+[32m  },[39m
+[32m  {[39m
+[32m    path: '/api/media/send_verification_code',[39m
+[32m    methods: [ 'POST' ],[39m
+[32m    middlewares: [ 'anonymous' ][39m
+[32m  },[39m
+[32m  {[39m
+[32m    path: '/api/media/verify_code',[39m
+[32m    methods: [ 'POST' ],[39m
+[32m    middlewares: [ 'anonymous' ][39m
+[32m  },[39m
+[32m  {[39m
+[32m    path: '/api/media/upload',[39m
+[32m    methods: [ 'POST' ],[39m
+[32m    middlewares: [ 'multerMiddleware', 'anonymous' ][39m
+[32m  },[39m
+[32m  {[39m
+[32m    path: '/api/complian',[39m
+[32m    methods: [ 'POST', 'GET' ],[39m
+[32m    middlewares: [[39m
+[32m      'anonymous',[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'anonymous'[39m
+[32m    ][39m
+[32m  },[39m
+[32m  {[39m
+[32m    path: '/api/complian/:id',[39m
+[32m    methods: [ 'DELETE' ],[39m
+[32m    middlewares: [ 'anonymous', 'anonymous' ][39m
+[32m  },[39m
+[32m  {[39m
+[32m    path: '/api/comment',[39m
+[32m    methods: [ 'POST', 'GET' ],[39m
+[32m    middlewares: [[39m
+[32m      'anonymous',[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'anonymous'[39m
+[32m    ][39m
+[32m  },[39m
+[32m  {[39m
+[32m    path: '/api/comment/:id',[39m
+[32m    methods: [ 'DELETE' ],[39m
+[32m    middlewares: [ 'anonymous', 'anonymous' ][39m
+[32m  },[39m
+[32m  {[39m
+[32m    path: '/api/service_charge',[39m
+[32m    methods: [ 'POST', 'GET' ],[39m
+[32m    middlewares: [ 'middleware', 'anonymous' ][39m
+[32m  },[39m
+[32m  {[39m
+[32m    path: '/api/service_charge/:id',[39m
+[32m    methods: [ 'DELETE' ],[39m
+[32m    middlewares: [ 'anonymous' ][39m
+[32m  },[39m
+[32m  {[39m
+[32m    path: '/api/payment',[39m
+[32m    methods: [ 'POST' ],[39m
+[32m    middlewares: [ 'anonymous' ][39m
+[32m  },[39m
+[32m  {[39m
+[32m    path: '/api/contactAuth/signup',[39m
+[32m    methods: [ 'POST' ],[39m
+[32m    middlewares: [[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'anonymous'[39m
+[32m    ][39m
+[32m  },[39m
+[32m  {[39m
+[32m    path: '/api/contactAuth/signin',[39m
+[32m    methods: [ 'POST' ],[39m
+[32m    middlewares: [ 'middleware', 'middleware', 'anonymous' ][39m
+[32m  },[39m
+[32m  {[39m
+[32m    path: '/api/contact/create',[39m
+[32m    methods: [ 'POST' ],[39m
+[32m    middlewares: [[39m
+[32m      'anonymous',[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'anonymous'[39m
+[32m    ][39m
+[32m  },[39m
+[32m  {[39m
+[32m    path: '/api/contact',[39m
+[32m    methods: [ 'GET' ],[39m
+[32m    middlewares: [ 'anonymous', 'anonymous' ][39m
+[32m  },[39m
+[32m  {[39m
+[32m    path: '/api/contact/:id',[39m
+[32m    methods: [ 'PUT', 'DELETE' ],[39m
+[32m    middlewares: [ 'anonymous', 'anonymous' ][39m
+[32m  }[39m
+[32m][39m
+2023-08-02 13:02:35:235 [32minfo[39m: [32mserver  is listening on port 5000[39m
+2023-08-02 13:03:47:347 [32minfo[39m: [32m[[39m
+[32m  { path: '/', methods: [ 'GET' ], middlewares: [ 'anonymous' ] },[39m
+[32m  {[39m
+[32m    path: '/api/auth/landlord',[39m
+[32m    methods: [ 'POST' ],[39m
+[32m    middlewares: [ 'middleware', 'middleware', 'anonymous' ][39m
+[32m  },[39m
+[32m  {[39m
+[32m    path: '/api/auth/tenant',[39m
+[32m    methods: [ 'POST' ],[39m
+[32m    middlewares: [ 'middleware', 'middleware', 'middleware', 'anonymous' ][39m
+[32m  },[39m
+[32m  {[39m
+[32m    path: '/api/auth/signin',[39m
+[32m    methods: [ 'POST' ],[39m
+[32m    middlewares: [ 'middleware', 'middleware', 'anonymous' ][39m
+[32m  },[39m
+[32m  {[39m
+[32m    path: '/api/auth/send_verification_code',[39m
+[32m    methods: [ 'POST' ],[39m
+[32m    middlewares: [ 'anonymous' ][39m
+[32m  },[39m
+[32m  {[39m
+[32m    path: '/api/auth/verify_code',[39m
+[32m    methods: [ 'POST' ],[39m
+[32m    middlewares: [ 'anonymous' ][39m
+[32m  },[39m
+[32m  {[39m
+[32m    path: '/api/auth/upload',[39m
+[32m    methods: [ 'POST' ],[39m
+[32m    middlewares: [ 'multerMiddleware', 'anonymous' ][39m
+[32m  },[39m
+[32m  {[39m
+[32m    path: '/api/user/profile',[39m
+[32m    methods: [ 'POST' ],[39m
+[32m    middlewares: [ 'anonymous' ][39m
+[32m  },[39m
+[32m  {[39m
+[32m    path: '/api/property/create',[39m
+[32m    methods: [ 'POST' ],[39m
+[32m    middlewares: [[39m
+[32m      'anonymous',[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'anonymous'[39m
+[32m    ][39m
+[32m  },[39m
+[32m  {[39m
+[32m    path: '/api/property/myProperty',[39m
+[32m    methods: [ 'GET' ],[39m
+[32m    middlewares: [ 'anonymous' ][39m
+[32m  },[39m
+[32m  {[39m
+[32m    path: '/api/flat/update',[39m
+[32m    methods: [ 'PUT' ],[39m
+[32m    middlewares: [ 'anonymous', 'anonymous' ][39m
+[32m  },[39m
+[32m  {[39m
+[32m    path: '/api/flat/remove_tenant/:id',[39m
+[32m    methods: [ 'PUT' ],[39m
+[32m    middlewares: [ 'anonymous', 'anonymous' ][39m
+[32m  },[39m
+[32m  {[39m
+[32m    path: '/api/flat/myFlat',[39m
+[32m    methods: [ 'GET' ],[39m
+[32m    middlewares: [ 'anonymous', 'anonymous' ][39m
+[32m  },[39m
+[32m  {[39m
+[32m    path: '/api/flat',[39m
+[32m    methods: [ 'POST' ],[39m
+[32m    middlewares: [[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'anonymous'[39m
+[32m    ][39m
+[32m  },[39m
+[32m  {[39m
+[32m    path: '/api/flat/assign_service',[39m
+[32m    methods: [ 'POST' ],[39m
+[32m    middlewares: [ 'anonymous', 'anonymous' ][39m
+[32m  },[39m
+[32m  {[39m
+[32m    path: '/api/media/landlord',[39m
+[32m    methods: [ 'POST' ],[39m
+[32m    middlewares: [ 'middleware', 'middleware', 'anonymous' ][39m
+[32m  },[39m
+[32m  {[39m
+[32m    path: '/api/media/tenant',[39m
+[32m    methods: [ 'POST' ],[39m
+[32m    middlewares: [ 'middleware', 'middleware', 'middleware', 'anonymous' ][39m
+[32m  },[39m
+[32m  {[39m
+[32m    path: '/api/media/signin',[39m
+[32m    methods: [ 'POST' ],[39m
+[32m    middlewares: [ 'middleware', 'middleware', 'anonymous' ][39m
+[32m  },[39m
+[32m  {[39m
+[32m    path: '/api/media/send_verification_code',[39m
+[32m    methods: [ 'POST' ],[39m
+[32m    middlewares: [ 'anonymous' ][39m
+[32m  },[39m
+[32m  {[39m
+[32m    path: '/api/media/verify_code',[39m
+[32m    methods: [ 'POST' ],[39m
+[32m    middlewares: [ 'anonymous' ][39m
+[32m  },[39m
+[32m  {[39m
+[32m    path: '/api/media/upload',[39m
+[32m    methods: [ 'POST' ],[39m
+[32m    middlewares: [ 'multerMiddleware', 'anonymous' ][39m
+[32m  },[39m
+[32m  {[39m
+[32m    path: '/api/complian',[39m
+[32m    methods: [ 'POST', 'GET' ],[39m
+[32m    middlewares: [[39m
+[32m      'anonymous',[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'anonymous'[39m
+[32m    ][39m
+[32m  },[39m
+[32m  {[39m
+[32m    path: '/api/complian/:id',[39m
+[32m    methods: [ 'DELETE' ],[39m
+[32m    middlewares: [ 'anonymous', 'anonymous' ][39m
+[32m  },[39m
+[32m  {[39m
+[32m    path: '/api/comment',[39m
+[32m    methods: [ 'POST', 'GET' ],[39m
+[32m    middlewares: [[39m
+[32m      'anonymous',[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'anonymous'[39m
+[32m    ][39m
+[32m  },[39m
+[32m  {[39m
+[32m    path: '/api/comment/:id',[39m
+[32m    methods: [ 'DELETE' ],[39m
+[32m    middlewares: [ 'anonymous', 'anonymous' ][39m
+[32m  },[39m
+[32m  {[39m
+[32m    path: '/api/service_charge',[39m
+[32m    methods: [ 'POST', 'GET' ],[39m
+[32m    middlewares: [ 'middleware', 'anonymous' ][39m
+[32m  },[39m
+[32m  {[39m
+[32m    path: '/api/service_charge/:id',[39m
+[32m    methods: [ 'DELETE' ],[39m
+[32m    middlewares: [ 'anonymous' ][39m
+[32m  },[39m
+[32m  {[39m
+[32m    path: '/api/payment',[39m
+[32m    methods: [ 'POST' ],[39m
+[32m    middlewares: [ 'anonymous' ][39m
+[32m  },[39m
+[32m  {[39m
+[32m    path: '/api/contactAuth/signup',[39m
+[32m    methods: [ 'POST' ],[39m
+[32m    middlewares: [[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'anonymous'[39m
+[32m    ][39m
+[32m  },[39m
+[32m  {[39m
+[32m    path: '/api/contactAuth/signin',[39m
+[32m    methods: [ 'POST' ],[39m
+[32m    middlewares: [ 'middleware', 'middleware', 'anonymous' ][39m
+[32m  },[39m
+[32m  {[39m
+[32m    path: '/api/contact/create',[39m
+[32m    methods: [ 'POST' ],[39m
+[32m    middlewares: [[39m
+[32m      'anonymous',[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'anonymous'[39m
+[32m    ][39m
+[32m  },[39m
+[32m  {[39m
+[32m    path: '/api/contact',[39m
+[32m    methods: [ 'GET' ],[39m
+[32m    middlewares: [ 'anonymous', 'anonymous' ][39m
+[32m  },[39m
+[32m  {[39m
+[32m    path: '/api/contact/:id',[39m
+[32m    methods: [ 'PUT', 'DELETE' ],[39m
+[32m    middlewares: [ 'anonymous', 'anonymous' ][39m
+[32m  }[39m
+[32m][39m
+2023-08-02 13:07:13:713 [32minfo[39m: [32m[[39m
+[32m  { path: '/', methods: [ 'GET' ], middlewares: [ 'anonymous' ] },[39m
+[32m  {[39m
+[32m    path: '/api/auth/landlord',[39m
+[32m    methods: [ 'POST' ],[39m
+[32m    middlewares: [ 'middleware', 'middleware', 'anonymous' ][39m
+[32m  },[39m
+[32m  {[39m
+[32m    path: '/api/auth/tenant',[39m
+[32m    methods: [ 'POST' ],[39m
+[32m    middlewares: [ 'middleware', 'middleware', 'middleware', 'anonymous' ][39m
+[32m  },[39m
+[32m  {[39m
+[32m    path: '/api/auth/signin',[39m
+[32m    methods: [ 'POST' ],[39m
+[32m    middlewares: [ 'middleware', 'middleware', 'anonymous' ][39m
+[32m  },[39m
+[32m  {[39m
+[32m    path: '/api/auth/send_verification_code',[39m
+[32m    methods: [ 'POST' ],[39m
+[32m    middlewares: [ 'anonymous' ][39m
+[32m  },[39m
+[32m  {[39m
+[32m    path: '/api/auth/verify_code',[39m
+[32m    methods: [ 'POST' ],[39m
+[32m    middlewares: [ 'anonymous' ][39m
+[32m  },[39m
+[32m  {[39m
+[32m    path: '/api/auth/upload',[39m
+[32m    methods: [ 'POST' ],[39m
+[32m    middlewares: [ 'multerMiddleware', 'anonymous' ][39m
+[32m  },[39m
+[32m  {[39m
+[32m    path: '/api/user/profile',[39m
+[32m    methods: [ 'POST' ],[39m
+[32m    middlewares: [ 'anonymous' ][39m
+[32m  },[39m
+[32m  {[39m
+[32m    path: '/api/property/create',[39m
+[32m    methods: [ 'POST' ],[39m
+[32m    middlewares: [[39m
+[32m      'anonymous',[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'anonymous'[39m
+[32m    ][39m
+[32m  },[39m
+[32m  {[39m
+[32m    path: '/api/property/myProperty',[39m
+[32m    methods: [ 'GET' ],[39m
+[32m    middlewares: [ 'anonymous' ][39m
+[32m  },[39m
+[32m  {[39m
+[32m    path: '/api/flat/update',[39m
+[32m    methods: [ 'PUT' ],[39m
+[32m    middlewares: [ 'anonymous', 'anonymous' ][39m
+[32m  },[39m
+[32m  {[39m
+[32m    path: '/api/flat/remove_tenant/:id',[39m
+[32m    methods: [ 'PUT' ],[39m
+[32m    middlewares: [ 'anonymous', 'anonymous' ][39m
+[32m  },[39m
+[32m  {[39m
+[32m    path: '/api/flat/myFlat',[39m
+[32m    methods: [ 'GET' ],[39m
+[32m    middlewares: [ 'anonymous', 'anonymous' ][39m
+[32m  },[39m
+[32m  {[39m
+[32m    path: '/api/flat',[39m
+[32m    methods: [ 'POST' ],[39m
+[32m    middlewares: [[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'anonymous'[39m
+[32m    ][39m
+[32m  },[39m
+[32m  {[39m
+[32m    path: '/api/flat/assign_service',[39m
+[32m    methods: [ 'POST' ],[39m
+[32m    middlewares: [ 'anonymous', 'anonymous' ][39m
+[32m  },[39m
+[32m  {[39m
+[32m    path: '/api/media/landlord',[39m
+[32m    methods: [ 'POST' ],[39m
+[32m    middlewares: [ 'middleware', 'middleware', 'anonymous' ][39m
+[32m  },[39m
+[32m  {[39m
+[32m    path: '/api/media/tenant',[39m
+[32m    methods: [ 'POST' ],[39m
+[32m    middlewares: [ 'middleware', 'middleware', 'middleware', 'anonymous' ][39m
+[32m  },[39m
+[32m  {[39m
+[32m    path: '/api/media/signin',[39m
+[32m    methods: [ 'POST' ],[39m
+[32m    middlewares: [ 'middleware', 'middleware', 'anonymous' ][39m
+[32m  },[39m
+[32m  {[39m
+[32m    path: '/api/media/send_verification_code',[39m
+[32m    methods: [ 'POST' ],[39m
+[32m    middlewares: [ 'anonymous' ][39m
+[32m  },[39m
+[32m  {[39m
+[32m    path: '/api/media/verify_code',[39m
+[32m    methods: [ 'POST' ],[39m
+[32m    middlewares: [ 'anonymous' ][39m
+[32m  },[39m
+[32m  {[39m
+[32m    path: '/api/media/upload',[39m
+[32m    methods: [ 'POST' ],[39m
+[32m    middlewares: [ 'multerMiddleware', 'anonymous' ][39m
+[32m  },[39m
+[32m  {[39m
+[32m    path: '/api/complian',[39m
+[32m    methods: [ 'POST', 'GET' ],[39m
+[32m    middlewares: [[39m
+[32m      'anonymous',[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'anonymous'[39m
+[32m    ][39m
+[32m  },[39m
+[32m  {[39m
+[32m    path: '/api/complian/:id',[39m
+[32m    methods: [ 'DELETE' ],[39m
+[32m    middlewares: [ 'anonymous', 'anonymous' ][39m
+[32m  },[39m
+[32m  {[39m
+[32m    path: '/api/comment',[39m
+[32m    methods: [ 'POST', 'GET' ],[39m
+[32m    middlewares: [[39m
+[32m      'anonymous',[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'anonymous'[39m
+[32m    ][39m
+[32m  },[39m
+[32m  {[39m
+[32m    path: '/api/comment/:id',[39m
+[32m    methods: [ 'DELETE' ],[39m
+[32m    middlewares: [ 'anonymous', 'anonymous' ][39m
+[32m  },[39m
+[32m  {[39m
+[32m    path: '/api/service_charge',[39m
+[32m    methods: [ 'POST', 'GET' ],[39m
+[32m    middlewares: [ 'middleware', 'anonymous' ][39m
+[32m  },[39m
+[32m  {[39m
+[32m    path: '/api/service_charge/:id',[39m
+[32m    methods: [ 'DELETE' ],[39m
+[32m    middlewares: [ 'anonymous' ][39m
+[32m  },[39m
+[32m  {[39m
+[32m    path: '/api/payment',[39m
+[32m    methods: [ 'POST' ],[39m
+[32m    middlewares: [ 'anonymous' ][39m
+[32m  },[39m
+[32m  {[39m
+[32m    path: '/api/contactAuth/signup',[39m
+[32m    methods: [ 'POST' ],[39m
+[32m    middlewares: [[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'anonymous'[39m
+[32m    ][39m
+[32m  },[39m
+[32m  {[39m
+[32m    path: '/api/contactAuth/signin',[39m
+[32m    methods: [ 'POST' ],[39m
+[32m    middlewares: [ 'middleware', 'middleware', 'anonymous' ][39m
+[32m  },[39m
+[32m  {[39m
+[32m    path: '/api/contact/create',[39m
+[32m    methods: [ 'POST' ],[39m
+[32m    middlewares: [[39m
+[32m      'anonymous',[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'anonymous'[39m
+[32m    ][39m
+[32m  },[39m
+[32m  {[39m
+[32m    path: '/api/contact',[39m
+[32m    methods: [ 'GET' ],[39m
+[32m    middlewares: [ 'anonymous', 'anonymous' ][39m
+[32m  },[39m
+[32m  {[39m
+[32m    path: '/api/contact/:id',[39m
+[32m    methods: [ 'PUT', 'DELETE' ],[39m
+[32m    middlewares: [ 'anonymous', 'anonymous' ][39m
+[32m  }[39m
+[32m][39m
+2023-08-02 13:08:43:843 [32minfo[39m: [32m[[39m
+[32m  { path: '/', methods: [ 'GET' ], middlewares: [ 'anonymous' ] },[39m
+[32m  {[39m
+[32m    path: '/api/auth/landlord',[39m
+[32m    methods: [ 'POST' ],[39m
+[32m    middlewares: [ 'middleware', 'middleware', 'anonymous' ][39m
+[32m  },[39m
+[32m  {[39m
+[32m    path: '/api/auth/tenant',[39m
+[32m    methods: [ 'POST' ],[39m
+[32m    middlewares: [ 'middleware', 'middleware', 'middleware', 'anonymous' ][39m
+[32m  },[39m
+[32m  {[39m
+[32m    path: '/api/auth/signin',[39m
+[32m    methods: [ 'POST' ],[39m
+[32m    middlewares: [ 'middleware', 'middleware', 'anonymous' ][39m
+[32m  },[39m
+[32m  {[39m
+[32m    path: '/api/auth/send_verification_code',[39m
+[32m    methods: [ 'POST' ],[39m
+[32m    middlewares: [ 'anonymous' ][39m
+[32m  },[39m
+[32m  {[39m
+[32m    path: '/api/auth/verify_code',[39m
+[32m    methods: [ 'POST' ],[39m
+[32m    middlewares: [ 'anonymous' ][39m
+[32m  },[39m
+[32m  {[39m
+[32m    path: '/api/auth/upload',[39m
+[32m    methods: [ 'POST' ],[39m
+[32m    middlewares: [ 'multerMiddleware', 'anonymous' ][39m
+[32m  },[39m
+[32m  {[39m
+[32m    path: '/api/user/profile',[39m
+[32m    methods: [ 'POST' ],[39m
+[32m    middlewares: [ 'anonymous' ][39m
+[32m  },[39m
+[32m  {[39m
+[32m    path: '/api/property/create',[39m
+[32m    methods: [ 'POST' ],[39m
+[32m    middlewares: [[39m
+[32m      'anonymous',[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'anonymous'[39m
+[32m    ][39m
+[32m  },[39m
+[32m  {[39m
+[32m    path: '/api/property/myProperty',[39m
+[32m    methods: [ 'GET' ],[39m
+[32m    middlewares: [ 'anonymous' ][39m
+[32m  },[39m
+[32m  {[39m
+[32m    path: '/api/flat/update',[39m
+[32m    methods: [ 'PUT' ],[39m
+[32m    middlewares: [ 'anonymous', 'anonymous' ][39m
+[32m  },[39m
+[32m  {[39m
+[32m    path: '/api/flat/remove_tenant/:id',[39m
+[32m    methods: [ 'PUT' ],[39m
+[32m    middlewares: [ 'anonymous', 'anonymous' ][39m
+[32m  },[39m
+[32m  {[39m
+[32m    path: '/api/flat/myFlat',[39m
+[32m    methods: [ 'GET' ],[39m
+[32m    middlewares: [ 'anonymous', 'anonymous' ][39m
+[32m  },[39m
+[32m  {[39m
+[32m    path: '/api/flat',[39m
+[32m    methods: [ 'POST' ],[39m
+[32m    middlewares: [[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'anonymous'[39m
+[32m    ][39m
+[32m  },[39m
+[32m  {[39m
+[32m    path: '/api/flat/assign_service',[39m
+[32m    methods: [ 'POST' ],[39m
+[32m    middlewares: [ 'anonymous', 'anonymous' ][39m
+[32m  },[39m
+[32m  {[39m
+[32m    path: '/api/media/landlord',[39m
+[32m    methods: [ 'POST' ],[39m
+[32m    middlewares: [ 'middleware', 'middleware', 'anonymous' ][39m
+[32m  },[39m
+[32m  {[39m
+[32m    path: '/api/media/tenant',[39m
+[32m    methods: [ 'POST' ],[39m
+[32m    middlewares: [ 'middleware', 'middleware', 'middleware', 'anonymous' ][39m
+[32m  },[39m
+[32m  {[39m
+[32m    path: '/api/media/signin',[39m
+[32m    methods: [ 'POST' ],[39m
+[32m    middlewares: [ 'middleware', 'middleware', 'anonymous' ][39m
+[32m  },[39m
+[32m  {[39m
+[32m    path: '/api/media/send_verification_code',[39m
+[32m    methods: [ 'POST' ],[39m
+[32m    middlewares: [ 'anonymous' ][39m
+[32m  },[39m
+[32m  {[39m
+[32m    path: '/api/media/verify_code',[39m
+[32m    methods: [ 'POST' ],[39m
+[32m    middlewares: [ 'anonymous' ][39m
+[32m  },[39m
+[32m  {[39m
+[32m    path: '/api/media/upload',[39m
+[32m    methods: [ 'POST' ],[39m
+[32m    middlewares: [ 'multerMiddleware', 'anonymous' ][39m
+[32m  },[39m
+[32m  {[39m
+[32m    path: '/api/complian',[39m
+[32m    methods: [ 'POST', 'GET' ],[39m
+[32m    middlewares: [[39m
+[32m      'anonymous',[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'anonymous'[39m
+[32m    ][39m
+[32m  },[39m
+[32m  {[39m
+[32m    path: '/api/complian/:id',[39m
+[32m    methods: [ 'DELETE' ],[39m
+[32m    middlewares: [ 'anonymous', 'anonymous' ][39m
+[32m  },[39m
+[32m  {[39m
+[32m    path: '/api/comment',[39m
+[32m    methods: [ 'POST', 'GET' ],[39m
+[32m    middlewares: [[39m
+[32m      'anonymous',[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'anonymous'[39m
+[32m    ][39m
+[32m  },[39m
+[32m  {[39m
+[32m    path: '/api/comment/:id',[39m
+[32m    methods: [ 'DELETE' ],[39m
+[32m    middlewares: [ 'anonymous', 'anonymous' ][39m
+[32m  },[39m
+[32m  {[39m
+[32m    path: '/api/service_charge',[39m
+[32m    methods: [ 'POST', 'GET' ],[39m
+[32m    middlewares: [ 'middleware', 'anonymous' ][39m
+[32m  },[39m
+[32m  {[39m
+[32m    path: '/api/service_charge/:id',[39m
+[32m    methods: [ 'DELETE' ],[39m
+[32m    middlewares: [ 'anonymous' ][39m
+[32m  },[39m
+[32m  {[39m
+[32m    path: '/api/payment',[39m
+[32m    methods: [ 'POST' ],[39m
+[32m    middlewares: [ 'anonymous' ][39m
+[32m  },[39m
+[32m  {[39m
+[32m    path: '/api/contactAuth/signup',[39m
+[32m    methods: [ 'POST' ],[39m
+[32m    middlewares: [[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'anonymous'[39m
+[32m    ][39m
+[32m  },[39m
+[32m  {[39m
+[32m    path: '/api/contactAuth/signin',[39m
+[32m    methods: [ 'POST' ],[39m
+[32m    middlewares: [ 'middleware', 'middleware', 'anonymous' ][39m
+[32m  },[39m
+[32m  {[39m
+[32m    path: '/api/contact/create',[39m
+[32m    methods: [ 'POST' ],[39m
+[32m    middlewares: [[39m
+[32m      'anonymous',[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'anonymous'[39m
+[32m    ][39m
+[32m  },[39m
+[32m  {[39m
+[32m    path: '/api/contact',[39m
+[32m    methods: [ 'GET' ],[39m
+[32m    middlewares: [ 'anonymous', 'anonymous' ][39m
+[32m  },[39m
+[32m  {[39m
+[32m    path: '/api/contact/:id',[39m
+[32m    methods: [ 'PUT', 'DELETE' ],[39m
+[32m    middlewares: [ 'anonymous', 'anonymous' ][39m
+[32m  }[39m
+[32m][39m
+2023-08-02 13:08:43:843 [32minfo[39m: [32mserver  is listening on port 5000[39m
+2023-08-02 13:08:43:843 [31merror[39m: [31mMongodb connection error {"code":"ECONNREFUSED","syscall":"querySrv","hostname":"_mongodb._tcp.cluster0.d8bojru.mongodb.net"}[39m
+2023-08-02 13:40:10:4010 [32minfo[39m: [32m[[39m
+[32m  { path: '/', methods: [ 'GET' ], middlewares: [ 'anonymous' ] },[39m
+[32m  {[39m
+[32m    path: '/api/auth/landlord',[39m
+[32m    methods: [ 'POST' ],[39m
+[32m    middlewares: [ 'middleware', 'middleware', 'anonymous' ][39m
+[32m  },[39m
+[32m  {[39m
+[32m    path: '/api/auth/tenant',[39m
+[32m    methods: [ 'POST' ],[39m
+[32m    middlewares: [ 'middleware', 'middleware', 'middleware', 'anonymous' ][39m
+[32m  },[39m
+[32m  {[39m
+[32m    path: '/api/auth/signin',[39m
+[32m    methods: [ 'POST' ],[39m
+[32m    middlewares: [ 'middleware', 'middleware', 'anonymous' ][39m
+[32m  },[39m
+[32m  {[39m
+[32m    path: '/api/auth/send_verification_code',[39m
+[32m    methods: [ 'POST' ],[39m
+[32m    middlewares: [ 'anonymous' ][39m
+[32m  },[39m
+[32m  {[39m
+[32m    path: '/api/auth/verify_code',[39m
+[32m    methods: [ 'POST' ],[39m
+[32m    middlewares: [ 'anonymous' ][39m
+[32m  },[39m
+[32m  {[39m
+[32m    path: '/api/auth/upload',[39m
+[32m    methods: [ 'POST' ],[39m
+[32m    middlewares: [ 'multerMiddleware', 'anonymous' ][39m
+[32m  },[39m
+[32m  {[39m
+[32m    path: '/api/user/profile',[39m
+[32m    methods: [ 'POST' ],[39m
+[32m    middlewares: [ 'anonymous' ][39m
+[32m  },[39m
+[32m  {[39m
+[32m    path: '/api/property/create',[39m
+[32m    methods: [ 'POST' ],[39m
+[32m    middlewares: [[39m
+[32m      'anonymous',[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'anonymous'[39m
+[32m    ][39m
+[32m  },[39m
+[32m  {[39m
+[32m    path: '/api/property/myProperty',[39m
+[32m    methods: [ 'GET' ],[39m
+[32m    middlewares: [ 'anonymous' ][39m
+[32m  },[39m
+[32m  {[39m
+[32m    path: '/api/flat/update',[39m
+[32m    methods: [ 'PUT' ],[39m
+[32m    middlewares: [ 'anonymous', 'anonymous' ][39m
+[32m  },[39m
+[32m  {[39m
+[32m    path: '/api/flat/remove_tenant/:id',[39m
+[32m    methods: [ 'PUT' ],[39m
+[32m    middlewares: [ 'anonymous', 'anonymous' ][39m
+[32m  },[39m
+[32m  {[39m
+[32m    path: '/api/flat/myFlat',[39m
+[32m    methods: [ 'GET' ],[39m
+[32m    middlewares: [ 'anonymous', 'anonymous' ][39m
+[32m  },[39m
+[32m  {[39m
+[32m    path: '/api/flat',[39m
+[32m    methods: [ 'POST' ],[39m
+[32m    middlewares: [[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'anonymous'[39m
+[32m    ][39m
+[32m  },[39m
+[32m  {[39m
+[32m    path: '/api/flat/assign_service',[39m
+[32m    methods: [ 'POST' ],[39m
+[32m    middlewares: [ 'anonymous', 'anonymous' ][39m
+[32m  },[39m
+[32m  {[39m
+[32m    path: '/api/media/landlord',[39m
+[32m    methods: [ 'POST' ],[39m
+[32m    middlewares: [ 'middleware', 'middleware', 'anonymous' ][39m
+[32m  },[39m
+[32m  {[39m
+[32m    path: '/api/media/tenant',[39m
+[32m    methods: [ 'POST' ],[39m
+[32m    middlewares: [ 'middleware', 'middleware', 'middleware', 'anonymous' ][39m
+[32m  },[39m
+[32m  {[39m
+[32m    path: '/api/media/signin',[39m
+[32m    methods: [ 'POST' ],[39m
+[32m    middlewares: [ 'middleware', 'middleware', 'anonymous' ][39m
+[32m  },[39m
+[32m  {[39m
+[32m    path: '/api/media/send_verification_code',[39m
+[32m    methods: [ 'POST' ],[39m
+[32m    middlewares: [ 'anonymous' ][39m
+[32m  },[39m
+[32m  {[39m
+[32m    path: '/api/media/verify_code',[39m
+[32m    methods: [ 'POST' ],[39m
+[32m    middlewares: [ 'anonymous' ][39m
+[32m  },[39m
+[32m  {[39m
+[32m    path: '/api/media/upload',[39m
+[32m    methods: [ 'POST' ],[39m
+[32m    middlewares: [ 'multerMiddleware', 'anonymous' ][39m
+[32m  },[39m
+[32m  {[39m
+[32m    path: '/api/complian',[39m
+[32m    methods: [ 'POST', 'GET' ],[39m
+[32m    middlewares: [[39m
+[32m      'anonymous',[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'anonymous'[39m
+[32m    ][39m
+[32m  },[39m
+[32m  {[39m
+[32m    path: '/api/complian/:id',[39m
+[32m    methods: [ 'DELETE' ],[39m
+[32m    middlewares: [ 'anonymous', 'anonymous' ][39m
+[32m  },[39m
+[32m  {[39m
+[32m    path: '/api/comment',[39m
+[32m    methods: [ 'POST', 'GET' ],[39m
+[32m    middlewares: [[39m
+[32m      'anonymous',[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'anonymous'[39m
+[32m    ][39m
+[32m  },[39m
+[32m  {[39m
+[32m    path: '/api/comment/:id',[39m
+[32m    methods: [ 'DELETE' ],[39m
+[32m    middlewares: [ 'anonymous', 'anonymous' ][39m
+[32m  },[39m
+[32m  {[39m
+[32m    path: '/api/service_charge',[39m
+[32m    methods: [ 'POST', 'GET' ],[39m
+[32m    middlewares: [ 'middleware', 'anonymous' ][39m
+[32m  },[39m
+[32m  {[39m
+[32m    path: '/api/service_charge/:id',[39m
+[32m    methods: [ 'DELETE' ],[39m
+[32m    middlewares: [ 'anonymous' ][39m
+[32m  },[39m
+[32m  {[39m
+[32m    path: '/api/payment',[39m
+[32m    methods: [ 'POST' ],[39m
+[32m    middlewares: [ 'anonymous' ][39m
+[32m  },[39m
+[32m  {[39m
+[32m    path: '/api/contactAuth/signup',[39m
+[32m    methods: [ 'POST' ],[39m
+[32m    middlewares: [[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'anonymous'[39m
+[32m    ][39m
+[32m  },[39m
+[32m  {[39m
+[32m    path: '/api/contactAuth/signin',[39m
+[32m    methods: [ 'POST' ],[39m
+[32m    middlewares: [ 'middleware', 'middleware', 'anonymous' ][39m
+[32m  },[39m
+[32m  {[39m
+[32m    path: '/api/contact/create',[39m
+[32m    methods: [ 'POST' ],[39m
+[32m    middlewares: [[39m
+[32m      'anonymous',[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'anonymous'[39m
+[32m    ][39m
+[32m  },[39m
+[32m  {[39m
+[32m    path: '/api/contact',[39m
+[32m    methods: [ 'GET' ],[39m
+[32m    middlewares: [ 'anonymous', 'anonymous' ][39m
+[32m  },[39m
+[32m  {[39m
+[32m    path: '/api/contact/:id',[39m
+[32m    methods: [ 'PUT', 'DELETE' ],[39m
+[32m    middlewares: [ 'anonymous', 'anonymous' ][39m
+[32m  }[39m
+[32m][39m
+2023-08-02 13:40:10:4010 [32minfo[39m: [32mserver  is listening on port 5000[39m
+2023-08-02 13:40:13:4013 [32minfo[39m: [32mdatabase has been connected successfully to "ac-ngmjyow-shard-00-02.d8bojru.mongodb.net"[39m
+2023-08-02 14:12:41:1241 [32minfo[39m: [32m[[39m
+[32m  { path: '/', methods: [ 'GET' ], middlewares: [ 'anonymous' ] },[39m
+[32m  {[39m
+[32m    path: '/api/media/upload',[39m
+[32m    methods: [ 'POST' ],[39m
+[32m    middlewares: [ 'multerMiddleware', 'anonymous' ][39m
+[32m  },[39m
+[32m  {[39m
+[32m    path: '/api/contactAuth/signup',[39m
+[32m    methods: [ 'POST' ],[39m
+[32m    middlewares: [[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'anonymous'[39m
+[32m    ][39m
+[32m  },[39m
+[32m  {[39m
+[32m    path: '/api/contactAuth/signin',[39m
+[32m    methods: [ 'POST' ],[39m
+[32m    middlewares: [ 'middleware', 'middleware', 'anonymous' ][39m
+[32m  },[39m
+[32m  {[39m
+[32m    path: '/api/contact/create',[39m
+[32m    methods: [ 'POST' ],[39m
+[32m    middlewares: [[39m
+[32m      'anonymous',[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'anonymous'[39m
+[32m    ][39m
+[32m  },[39m
+[32m  {[39m
+[32m    path: '/api/contact',[39m
+[32m    methods: [ 'GET' ],[39m
+[32m    middlewares: [ 'anonymous', 'anonymous' ][39m
+[32m  },[39m
+[32m  {[39m
+[32m    path: '/api/contact/:id',[39m
+[32m    methods: [ 'PUT', 'DELETE' ],[39m
+[32m    middlewares: [ 'anonymous', 'anonymous' ][39m
+[32m  }[39m
+[32m][39m
+2023-08-02 14:12:41:1241 [32minfo[39m: [32mserver  is listening on port 5000[39m
+2023-08-02 14:12:44:1244 [32minfo[39m: [32mdatabase has been connected successfully to "ac-ngmjyow-shard-00-00.d8bojru.mongodb.net"[39m
+2023-08-02 14:19:48:1948 [32minfo[39m: [32m[[39m
+[32m  { path: '/', methods: [ 'GET' ], middlewares: [ 'anonymous' ] },[39m
+[32m  {[39m
+[32m    path: '/api/media/upload',[39m
+[32m    methods: [ 'POST' ],[39m
+[32m    middlewares: [ 'multerMiddleware', 'anonymous' ][39m
+[32m  },[39m
+[32m  {[39m
+[32m    path: '/api/contactAuth/signup',[39m
+[32m    methods: [ 'POST' ],[39m
+[32m    middlewares: [[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'anonymous'[39m
+[32m    ][39m
+[32m  },[39m
+[32m  {[39m
+[32m    path: '/api/contactAuth/signin',[39m
+[32m    methods: [ 'POST' ],[39m
+[32m    middlewares: [ 'middleware', 'middleware', 'anonymous' ][39m
+[32m  },[39m
+[32m  {[39m
+[32m    path: '/api/contact/create',[39m
+[32m    methods: [ 'POST' ],[39m
+[32m    middlewares: [[39m
+[32m      'anonymous',[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'anonymous'[39m
+[32m    ][39m
+[32m  },[39m
+[32m  {[39m
+[32m    path: '/api/contact',[39m
+[32m    methods: [ 'GET' ],[39m
+[32m    middlewares: [ 'anonymous', 'anonymous' ][39m
+[32m  },[39m
+[32m  {[39m
+[32m    path: '/api/contact/:id',[39m
+[32m    methods: [ 'PUT', 'DELETE' ],[39m
+[32m    middlewares: [ 'anonymous', 'anonymous' ][39m
+[32m  }[39m
+[32m][39m
+2023-08-02 14:19:48:1948 [32minfo[39m: [32mserver  is listening on port 5000[39m
+2023-08-02 14:19:51:1951 [32minfo[39m: [32mdatabase has been connected successfully to "ac-ngmjyow-shard-00-01.d8bojru.mongodb.net"[39m
+2023-08-02 14:20:34:2034 [31merror[39m: [31mError status 400[39m
+2023-08-02 14:20:34:2034 [32minfo[39m: [32mLog error undefined[39m
+2023-08-02 14:21:28:2128 [32minfo[39m: [32m[[39m
+[32m  { path: '/', methods: [ 'GET' ], middlewares: [ 'anonymous' ] },[39m
+[32m  {[39m
+[32m    path: '/api/media/upload',[39m
+[32m    methods: [ 'POST' ],[39m
+[32m    middlewares: [ 'multerMiddleware', 'anonymous' ][39m
+[32m  },[39m
+[32m  {[39m
+[32m    path: '/api/contactAuth/signup',[39m
+[32m    methods: [ 'POST' ],[39m
+[32m    middlewares: [[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'anonymous'[39m
+[32m    ][39m
+[32m  },[39m
+[32m  {[39m
+[32m    path: '/api/contactAuth/signin',[39m
+[32m    methods: [ 'POST' ],[39m
+[32m    middlewares: [ 'middleware', 'middleware', 'anonymous' ][39m
+[32m  },[39m
+[32m  {[39m
+[32m    path: '/api/contact/create',[39m
+[32m    methods: [ 'POST' ],[39m
+[32m    middlewares: [[39m
+[32m      'anonymous',[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'anonymous'[39m
+[32m    ][39m
+[32m  },[39m
+[32m  {[39m
+[32m    path: '/api/contact',[39m
+[32m    methods: [ 'GET' ],[39m
+[32m    middlewares: [ 'anonymous', 'anonymous' ][39m
+[32m  },[39m
+[32m  {[39m
+[32m    path: '/api/contact/:id',[39m
+[32m    methods: [ 'PUT', 'DELETE' ],[39m
+[32m    middlewares: [ 'anonymous', 'anonymous' ][39m
+[32m  }[39m
+[32m][39m
+2023-08-02 14:21:28:2128 [32minfo[39m: [32mserver  is listening on port 5000[39m
+2023-08-02 14:21:30:2130 [32minfo[39m: [32mdatabase has been connected successfully to "ac-ngmjyow-shard-00-02.d8bojru.mongodb.net"[39m
+2023-08-02 14:21:49:2149 [32minfo[39m: [32m[[39m
+[32m  { path: '/', methods: [ 'GET' ], middlewares: [ 'anonymous' ] },[39m
+[32m  {[39m
+[32m    path: '/api/media/upload',[39m
+[32m    methods: [ 'POST' ],[39m
+[32m    middlewares: [ 'multerMiddleware', 'anonymous' ][39m
+[32m  },[39m
+[32m  {[39m
+[32m    path: '/api/contactAuth/signup',[39m
+[32m    methods: [ 'POST' ],[39m
+[32m    middlewares: [[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'anonymous'[39m
+[32m    ][39m
+[32m  },[39m
+[32m  {[39m
+[32m    path: '/api/contactAuth/signin',[39m
+[32m    methods: [ 'POST' ],[39m
+[32m    middlewares: [ 'middleware', 'middleware', 'anonymous' ][39m
+[32m  },[39m
+[32m  {[39m
+[32m    path: '/api/contact/create',[39m
+[32m    methods: [ 'POST' ],[39m
+[32m    middlewares: [[39m
+[32m      'anonymous',[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'anonymous'[39m
+[32m    ][39m
+[32m  },[39m
+[32m  {[39m
+[32m    path: '/api/contact',[39m
+[32m    methods: [ 'GET' ],[39m
+[32m    middlewares: [ 'anonymous', 'anonymous' ][39m
+[32m  },[39m
+[32m  {[39m
+[32m    path: '/api/contact/:id',[39m
+[32m    methods: [ 'PUT', 'DELETE' ],[39m
+[32m    middlewares: [ 'anonymous', 'anonymous' ][39m
+[32m  }[39m
+[32m][39m
+2023-08-02 14:21:49:2149 [32minfo[39m: [32mserver  is listening on port 5000[39m
+2023-08-02 14:21:51:2151 [32minfo[39m: [32mdatabase has been connected successfully to "ac-ngmjyow-shard-00-00.d8bojru.mongodb.net"[39m
+2023-08-02 14:21:58:2158 [31merror[39m: [31mError status 400[39m
+2023-08-02 14:21:58:2158 [32minfo[39m: [32mLog error undefined[39m
+2023-08-02 14:22:52:2252 [32minfo[39m: [32mLog error "LIMIT_UNEXPECTED_FILE"[39m
+2023-08-02 14:23:58:2358 [32minfo[39m: [32m[[39m
+[32m  { path: '/', methods: [ 'GET' ], middlewares: [ 'anonymous' ] },[39m
+[32m  {[39m
+[32m    path: '/api/media/upload',[39m
+[32m    methods: [ 'POST' ],[39m
+[32m    middlewares: [ 'multerMiddleware', 'anonymous' ][39m
+[32m  },[39m
+[32m  {[39m
+[32m    path: '/api/contactAuth/signup',[39m
+[32m    methods: [ 'POST' ],[39m
+[32m    middlewares: [[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'anonymous'[39m
+[32m    ][39m
+[32m  },[39m
+[32m  {[39m
+[32m    path: '/api/contactAuth/signin',[39m
+[32m    methods: [ 'POST' ],[39m
+[32m    middlewares: [ 'middleware', 'middleware', 'anonymous' ][39m
+[32m  },[39m
+[32m  {[39m
+[32m    path: '/api/contact/create',[39m
+[32m    methods: [ 'POST' ],[39m
+[32m    middlewares: [[39m
+[32m      'anonymous',[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'anonymous'[39m
+[32m    ][39m
+[32m  },[39m
+[32m  {[39m
+[32m    path: '/api/contact',[39m
+[32m    methods: [ 'GET' ],[39m
+[32m    middlewares: [ 'anonymous', 'anonymous' ][39m
+[32m  },[39m
+[32m  {[39m
+[32m    path: '/api/contact/:id',[39m
+[32m    methods: [ 'PUT', 'DELETE' ],[39m
+[32m    middlewares: [ 'anonymous', 'anonymous' ][39m
+[32m  }[39m
+[32m][39m
+2023-08-02 14:23:58:2358 [32minfo[39m: [32mserver  is listening on port 5000[39m
+2023-08-02 14:24:06:246 [32minfo[39m: [32m[[39m
+[32m  { path: '/', methods: [ 'GET' ], middlewares: [ 'anonymous' ] },[39m
+[32m  {[39m
+[32m    path: '/api/media/upload',[39m
+[32m    methods: [ 'POST' ],[39m
+[32m    middlewares: [ 'multerMiddleware', 'anonymous' ][39m
+[32m  },[39m
+[32m  {[39m
+[32m    path: '/api/contactAuth/signup',[39m
+[32m    methods: [ 'POST' ],[39m
+[32m    middlewares: [[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'anonymous'[39m
+[32m    ][39m
+[32m  },[39m
+[32m  {[39m
+[32m    path: '/api/contactAuth/signin',[39m
+[32m    methods: [ 'POST' ],[39m
+[32m    middlewares: [ 'middleware', 'middleware', 'anonymous' ][39m
+[32m  },[39m
+[32m  {[39m
+[32m    path: '/api/contact/create',[39m
+[32m    methods: [ 'POST' ],[39m
+[32m    middlewares: [[39m
+[32m      'anonymous',[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'anonymous'[39m
+[32m    ][39m
+[32m  },[39m
+[32m  {[39m
+[32m    path: '/api/contact',[39m
+[32m    methods: [ 'GET' ],[39m
+[32m    middlewares: [ 'anonymous', 'anonymous' ][39m
+[32m  },[39m
+[32m  {[39m
+[32m    path: '/api/contact/:id',[39m
+[32m    methods: [ 'PUT', 'DELETE' ],[39m
+[32m    middlewares: [ 'anonymous', 'anonymous' ][39m
+[32m  }[39m
+[32m][39m
+2023-08-02 14:24:06:246 [32minfo[39m: [32mserver  is listening on port 5000[39m
+2023-08-02 14:24:07:247 [32minfo[39m: [32mdatabase has been connected successfully to "ac-ngmjyow-shard-00-02.d8bojru.mongodb.net"[39m
+2023-08-02 14:24:27:2427 [32minfo[39m: [32m[[39m
+[32m  { path: '/', methods: [ 'GET' ], middlewares: [ 'anonymous' ] },[39m
+[32m  {[39m
+[32m    path: '/api/media/upload',[39m
+[32m    methods: [ 'POST' ],[39m
+[32m    middlewares: [ 'multerMiddleware', 'anonymous' ][39m
+[32m  },[39m
+[32m  {[39m
+[32m    path: '/api/contactAuth/signup',[39m
+[32m    methods: [ 'POST' ],[39m
+[32m    middlewares: [[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'anonymous'[39m
+[32m    ][39m
+[32m  },[39m
+[32m  {[39m
+[32m    path: '/api/contactAuth/signin',[39m
+[32m    methods: [ 'POST' ],[39m
+[32m    middlewares: [ 'middleware', 'middleware', 'anonymous' ][39m
+[32m  },[39m
+[32m  {[39m
+[32m    path: '/api/contact/create',[39m
+[32m    methods: [ 'POST' ],[39m
+[32m    middlewares: [[39m
+[32m      'anonymous',[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'anonymous'[39m
+[32m    ][39m
+[32m  },[39m
+[32m  {[39m
+[32m    path: '/api/contact',[39m
+[32m    methods: [ 'GET' ],[39m
+[32m    middlewares: [ 'anonymous', 'anonymous' ][39m
+[32m  },[39m
+[32m  {[39m
+[32m    path: '/api/contact/:id',[39m
+[32m    methods: [ 'PUT', 'DELETE' ],[39m
+[32m    middlewares: [ 'anonymous', 'anonymous' ][39m
+[32m  }[39m
+[32m][39m
+2023-08-02 14:24:27:2427 [32minfo[39m: [32mserver  is listening on port 5000[39m
+2023-08-02 14:24:29:2429 [32minfo[39m: [32mdatabase has been connected successfully to "ac-ngmjyow-shard-00-00.d8bojru.mongodb.net"[39m
+2023-08-02 14:25:38:2538 [32minfo[39m: [32m[[39m
+[32m  { path: '/', methods: [ 'GET' ], middlewares: [ 'anonymous' ] },[39m
+[32m  {[39m
+[32m    path: '/api/media/upload',[39m
+[32m    methods: [ 'POST' ],[39m
+[32m    middlewares: [ 'multerMiddleware', 'anonymous' ][39m
+[32m  },[39m
+[32m  {[39m
+[32m    path: '/api/contactAuth/signup',[39m
+[32m    methods: [ 'POST' ],[39m
+[32m    middlewares: [[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'anonymous'[39m
+[32m    ][39m
+[32m  },[39m
+[32m  {[39m
+[32m    path: '/api/contactAuth/signin',[39m
+[32m    methods: [ 'POST' ],[39m
+[32m    middlewares: [ 'middleware', 'middleware', 'anonymous' ][39m
+[32m  },[39m
+[32m  {[39m
+[32m    path: '/api/contact/create',[39m
+[32m    methods: [ 'POST' ],[39m
+[32m    middlewares: [[39m
+[32m      'anonymous',[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'anonymous'[39m
+[32m    ][39m
+[32m  },[39m
+[32m  {[39m
+[32m    path: '/api/contact',[39m
+[32m    methods: [ 'GET' ],[39m
+[32m    middlewares: [ 'anonymous', 'anonymous' ][39m
+[32m  },[39m
+[32m  {[39m
+[32m    path: '/api/contact/:id',[39m
+[32m    methods: [ 'PUT', 'DELETE' ],[39m
+[32m    middlewares: [ 'anonymous', 'anonymous' ][39m
+[32m  }[39m
+[32m][39m
+2023-08-02 14:25:38:2538 [32minfo[39m: [32mserver  is listening on port 5000[39m
+2023-08-02 14:25:40:2540 [32minfo[39m: [32mdatabase has been connected successfully to "ac-ngmjyow-shard-00-00.d8bojru.mongodb.net"[39m
+2023-08-02 14:25:59:2559 [31merror[39m: [31mError status 400[39m
+2023-08-02 14:26:51:2651 [32minfo[39m: [32m[[39m
+[32m  { path: '/', methods: [ 'GET' ], middlewares: [ 'anonymous' ] },[39m
+[32m  {[39m
+[32m    path: '/api/media/upload',[39m
+[32m    methods: [ 'POST' ],[39m
+[32m    middlewares: [ 'multerMiddleware', 'anonymous' ][39m
+[32m  },[39m
+[32m  {[39m
+[32m    path: '/api/contactAuth/signup',[39m
+[32m    methods: [ 'POST' ],[39m
+[32m    middlewares: [[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'anonymous'[39m
+[32m    ][39m
+[32m  },[39m
+[32m  {[39m
+[32m    path: '/api/contactAuth/signin',[39m
+[32m    methods: [ 'POST' ],[39m
+[32m    middlewares: [ 'middleware', 'middleware', 'anonymous' ][39m
+[32m  },[39m
+[32m  {[39m
+[32m    path: '/api/contact/create',[39m
+[32m    methods: [ 'POST' ],[39m
+[32m    middlewares: [[39m
+[32m      'anonymous',[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'anonymous'[39m
+[32m    ][39m
+[32m  },[39m
+[32m  {[39m
+[32m    path: '/api/contact',[39m
+[32m    methods: [ 'GET' ],[39m
+[32m    middlewares: [ 'anonymous', 'anonymous' ][39m
+[32m  },[39m
+[32m  {[39m
+[32m    path: '/api/contact/:id',[39m
+[32m    methods: [ 'PUT', 'DELETE' ],[39m
+[32m    middlewares: [ 'anonymous', 'anonymous' ][39m
+[32m  }[39m
+[32m][39m
+2023-08-02 14:26:51:2651 [32minfo[39m: [32mserver  is listening on port 5000[39m
+2023-08-02 14:26:54:2654 [32minfo[39m: [32mdatabase has been connected successfully to "ac-ngmjyow-shard-00-01.d8bojru.mongodb.net"[39m
+2023-08-02 14:26:58:2658 [31merror[39m: [31mError status 400[39m
+2023-08-02 14:28:12:2812 [32minfo[39m: [32m[[39m
+[32m  { path: '/', methods: [ 'GET' ], middlewares: [ 'anonymous' ] },[39m
+[32m  {[39m
+[32m    path: '/api/media/upload',[39m
+[32m    methods: [ 'POST' ],[39m
+[32m    middlewares: [ 'multerMiddleware', 'anonymous' ][39m
+[32m  },[39m
+[32m  {[39m
+[32m    path: '/api/contactAuth/signup',[39m
+[32m    methods: [ 'POST' ],[39m
+[32m    middlewares: [[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'anonymous'[39m
+[32m    ][39m
+[32m  },[39m
+[32m  {[39m
+[32m    path: '/api/contactAuth/signin',[39m
+[32m    methods: [ 'POST' ],[39m
+[32m    middlewares: [ 'middleware', 'middleware', 'anonymous' ][39m
+[32m  },[39m
+[32m  {[39m
+[32m    path: '/api/contact/create',[39m
+[32m    methods: [ 'POST' ],[39m
+[32m    middlewares: [[39m
+[32m      'anonymous',[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'anonymous'[39m
+[32m    ][39m
+[32m  },[39m
+[32m  {[39m
+[32m    path: '/api/contact',[39m
+[32m    methods: [ 'GET' ],[39m
+[32m    middlewares: [ 'anonymous', 'anonymous' ][39m
+[32m  },[39m
+[32m  {[39m
+[32m    path: '/api/contact/:id',[39m
+[32m    methods: [ 'PUT', 'DELETE' ],[39m
+[32m    middlewares: [ 'anonymous', 'anonymous' ][39m
+[32m  }[39m
+[32m][39m
+2023-08-02 14:28:12:2812 [32minfo[39m: [32mserver  is listening on port 5000[39m
+2023-08-02 14:28:14:2814 [32minfo[39m: [32mdatabase has been connected successfully to "ac-ngmjyow-shard-00-02.d8bojru.mongodb.net"[39m
+2023-08-02 14:32:56:3256 [32minfo[39m: [32m[[39m
+[32m  { path: '/', methods: [ 'GET' ], middlewares: [ 'anonymous' ] },[39m
+[32m  {[39m
+[32m    path: '/api/media/upload',[39m
+[32m    methods: [ 'POST' ],[39m
+[32m    middlewares: [ 'multerMiddleware', 'anonymous' ][39m
+[32m  },[39m
+[32m  {[39m
+[32m    path: '/api/contactAuth/signup',[39m
+[32m    methods: [ 'POST' ],[39m
+[32m    middlewares: [[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'anonymous'[39m
+[32m    ][39m
+[32m  },[39m
+[32m  {[39m
+[32m    path: '/api/contactAuth/signin',[39m
+[32m    methods: [ 'POST' ],[39m
+[32m    middlewares: [ 'middleware', 'middleware', 'anonymous' ][39m
+[32m  },[39m
+[32m  {[39m
+[32m    path: '/api/contact/create',[39m
+[32m    methods: [ 'POST' ],[39m
+[32m    middlewares: [[39m
+[32m      'anonymous',[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'anonymous'[39m
+[32m    ][39m
+[32m  },[39m
+[32m  {[39m
+[32m    path: '/api/contact',[39m
+[32m    methods: [ 'GET' ],[39m
+[32m    middlewares: [ 'anonymous', 'anonymous' ][39m
+[32m  },[39m
+[32m  {[39m
+[32m    path: '/api/contact/:id',[39m
+[32m    methods: [ 'PUT', 'DELETE' ],[39m
+[32m    middlewares: [ 'anonymous', 'anonymous' ][39m
+[32m  }[39m
+[32m][39m
+2023-08-02 14:32:56:3256 [32minfo[39m: [32mserver  is listening on port 5000[39m
+2023-08-02 14:33:19:3319 [32minfo[39m: [32m[[39m
+[32m  { path: '/', methods: [ 'GET' ], middlewares: [ 'anonymous' ] },[39m
+[32m  {[39m
+[32m    path: '/api/media/upload',[39m
+[32m    methods: [ 'POST' ],[39m
+[32m    middlewares: [ 'multerMiddleware', 'anonymous' ][39m
+[32m  },[39m
+[32m  {[39m
+[32m    path: '/api/contactAuth/signup',[39m
+[32m    methods: [ 'POST' ],[39m
+[32m    middlewares: [[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'anonymous'[39m
+[32m    ][39m
+[32m  },[39m
+[32m  {[39m
+[32m    path: '/api/contactAuth/signin',[39m
+[32m    methods: [ 'POST' ],[39m
+[32m    middlewares: [ 'middleware', 'middleware', 'anonymous' ][39m
+[32m  },[39m
+[32m  {[39m
+[32m    path: '/api/contact/create',[39m
+[32m    methods: [ 'POST' ],[39m
+[32m    middlewares: [[39m
+[32m      'anonymous',[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'anonymous'[39m
+[32m    ][39m
+[32m  },[39m
+[32m  {[39m
+[32m    path: '/api/contact',[39m
+[32m    methods: [ 'GET' ],[39m
+[32m    middlewares: [ 'anonymous', 'anonymous' ][39m
+[32m  },[39m
+[32m  {[39m
+[32m    path: '/api/contact/:id',[39m
+[32m    methods: [ 'PUT', 'DELETE' ],[39m
+[32m    middlewares: [ 'anonymous', 'anonymous' ][39m
+[32m  }[39m
+[32m][39m
+2023-08-02 14:33:19:3319 [32minfo[39m: [32mserver  is listening on port 5000[39m
+2023-08-02 14:33:21:3321 [32minfo[39m: [32mdatabase has been connected successfully to "ac-ngmjyow-shard-00-01.d8bojru.mongodb.net"[39m
+2023-08-02 14:33:24:3324 [32minfo[39m: [32mLog error undefined[39m
+2023-08-02 14:34:17:3417 [32minfo[39m: [32m[[39m
+[32m  { path: '/', methods: [ 'GET' ], middlewares: [ 'anonymous' ] },[39m
+[32m  {[39m
+[32m    path: '/api/media/upload',[39m
+[32m    methods: [ 'POST' ],[39m
+[32m    middlewares: [ 'multerMiddleware', 'anonymous' ][39m
+[32m  },[39m
+[32m  {[39m
+[32m    path: '/api/contactAuth/signup',[39m
+[32m    methods: [ 'POST' ],[39m
+[32m    middlewares: [[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'anonymous'[39m
+[32m    ][39m
+[32m  },[39m
+[32m  {[39m
+[32m    path: '/api/contactAuth/signin',[39m
+[32m    methods: [ 'POST' ],[39m
+[32m    middlewares: [ 'middleware', 'middleware', 'anonymous' ][39m
+[32m  },[39m
+[32m  {[39m
+[32m    path: '/api/contact/create',[39m
+[32m    methods: [ 'POST' ],[39m
+[32m    middlewares: [[39m
+[32m      'anonymous',[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'anonymous'[39m
+[32m    ][39m
+[32m  },[39m
+[32m  {[39m
+[32m    path: '/api/contact',[39m
+[32m    methods: [ 'GET' ],[39m
+[32m    middlewares: [ 'anonymous', 'anonymous' ][39m
+[32m  },[39m
+[32m  {[39m
+[32m    path: '/api/contact/:id',[39m
+[32m    methods: [ 'PUT', 'DELETE' ],[39m
+[32m    middlewares: [ 'anonymous', 'anonymous' ][39m
+[32m  }[39m
+[32m][39m
+2023-08-02 14:34:17:3417 [32minfo[39m: [32mserver  is listening on port 5000[39m
+2023-08-02 14:34:19:3419 [32minfo[39m: [32mdatabase has been connected successfully to "ac-ngmjyow-shard-00-00.d8bojru.mongodb.net"[39m
+2023-08-02 14:38:14:3814 [32minfo[39m: [32m[[39m
+[32m  { path: '/', methods: [ 'GET' ], middlewares: [ 'anonymous' ] },[39m
+[32m  {[39m
+[32m    path: '/api/media/upload',[39m
+[32m    methods: [ 'POST' ],[39m
+[32m    middlewares: [ 'multerMiddleware', 'anonymous' ][39m
+[32m  },[39m
+[32m  {[39m
+[32m    path: '/api/contactAuth/signup',[39m
+[32m    methods: [ 'POST' ],[39m
+[32m    middlewares: [[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'anonymous'[39m
+[32m    ][39m
+[32m  },[39m
+[32m  {[39m
+[32m    path: '/api/contactAuth/signin',[39m
+[32m    methods: [ 'POST' ],[39m
+[32m    middlewares: [ 'middleware', 'middleware', 'anonymous' ][39m
+[32m  },[39m
+[32m  {[39m
+[32m    path: '/api/contact/create',[39m
+[32m    methods: [ 'POST' ],[39m
+[32m    middlewares: [[39m
+[32m      'anonymous',[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'anonymous'[39m
+[32m    ][39m
+[32m  },[39m
+[32m  {[39m
+[32m    path: '/api/contact',[39m
+[32m    methods: [ 'GET' ],[39m
+[32m    middlewares: [ 'anonymous', 'anonymous' ][39m
+[32m  },[39m
+[32m  {[39m
+[32m    path: '/api/contact/:id',[39m
+[32m    methods: [ 'PUT', 'DELETE' ],[39m
+[32m    middlewares: [ 'anonymous', 'anonymous' ][39m
+[32m  }[39m
+[32m][39m
+2023-08-02 14:38:14:3814 [32minfo[39m: [32mserver  is listening on port 5000[39m
+2023-08-02 14:38:17:3817 [32minfo[39m: [32mdatabase has been connected successfully to "ac-ngmjyow-shard-00-01.d8bojru.mongodb.net"[39m
+2023-08-02 14:39:02:392 [32minfo[39m: [32m[[39m
+[32m  { path: '/', methods: [ 'GET' ], middlewares: [ 'anonymous' ] },[39m
+[32m  {[39m
+[32m    path: '/api/media/upload',[39m
+[32m    methods: [ 'POST' ],[39m
+[32m    middlewares: [ 'multerMiddleware', 'anonymous' ][39m
+[32m  },[39m
+[32m  {[39m
+[32m    path: '/api/contactAuth/signup',[39m
+[32m    methods: [ 'POST' ],[39m
+[32m    middlewares: [[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'anonymous'[39m
+[32m    ][39m
+[32m  },[39m
+[32m  {[39m
+[32m    path: '/api/contactAuth/signin',[39m
+[32m    methods: [ 'POST' ],[39m
+[32m    middlewares: [ 'middleware', 'middleware', 'anonymous' ][39m
+[32m  },[39m
+[32m  {[39m
+[32m    path: '/api/contact/create',[39m
+[32m    methods: [ 'POST' ],[39m
+[32m    middlewares: [[39m
+[32m      'anonymous',[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'anonymous'[39m
+[32m    ][39m
+[32m  },[39m
+[32m  {[39m
+[32m    path: '/api/contact',[39m
+[32m    methods: [ 'GET' ],[39m
+[32m    middlewares: [ 'anonymous', 'anonymous' ][39m
+[32m  },[39m
+[32m  {[39m
+[32m    path: '/api/contact/:id',[39m
+[32m    methods: [ 'PUT', 'DELETE' ],[39m
+[32m    middlewares: [ 'anonymous', 'anonymous' ][39m
+[32m  }[39m
+[32m][39m
+2023-08-02 14:39:02:392 [32minfo[39m: [32mserver  is listening on port 5000[39m
+2023-08-02 14:39:04:394 [32minfo[39m: [32mdatabase has been connected successfully to "ac-ngmjyow-shard-00-02.d8bojru.mongodb.net"[39m
+2023-08-02 14:39:39:3939 [32minfo[39m: [32m[[39m
+[32m  { path: '/', methods: [ 'GET' ], middlewares: [ 'anonymous' ] },[39m
+[32m  {[39m
+[32m    path: '/api/media/upload',[39m
+[32m    methods: [ 'POST' ],[39m
+[32m    middlewares: [ 'multerMiddleware', 'anonymous' ][39m
+[32m  },[39m
+[32m  {[39m
+[32m    path: '/api/contactAuth/signup',[39m
+[32m    methods: [ 'POST' ],[39m
+[32m    middlewares: [[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'anonymous'[39m
+[32m    ][39m
+[32m  },[39m
+[32m  {[39m
+[32m    path: '/api/contactAuth/signin',[39m
+[32m    methods: [ 'POST' ],[39m
+[32m    middlewares: [ 'middleware', 'middleware', 'anonymous' ][39m
+[32m  },[39m
+[32m  {[39m
+[32m    path: '/api/contact/create',[39m
+[32m    methods: [ 'POST' ],[39m
+[32m    middlewares: [[39m
+[32m      'anonymous',[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'anonymous'[39m
+[32m    ][39m
+[32m  },[39m
+[32m  {[39m
+[32m    path: '/api/contact',[39m
+[32m    methods: [ 'GET' ],[39m
+[32m    middlewares: [ 'anonymous', 'anonymous' ][39m
+[32m  },[39m
+[32m  {[39m
+[32m    path: '/api/contact/:id',[39m
+[32m    methods: [ 'PUT', 'DELETE' ],[39m
+[32m    middlewares: [ 'anonymous', 'anonymous' ][39m
+[32m  }[39m
+[32m][39m
+2023-08-02 14:39:39:3939 [32minfo[39m: [32mserver  is listening on port 5000[39m
+2023-08-02 14:39:42:3942 [32minfo[39m: [32mdatabase has been connected successfully to "ac-ngmjyow-shard-00-01.d8bojru.mongodb.net"[39m
+2023-08-02 14:40:23:4023 [32minfo[39m: [32m[[39m
+[32m  { path: '/', methods: [ 'GET' ], middlewares: [ 'anonymous' ] },[39m
+[32m  {[39m
+[32m    path: '/api/media/upload',[39m
+[32m    methods: [ 'POST' ],[39m
+[32m    middlewares: [ 'multerMiddleware', 'anonymous' ][39m
+[32m  },[39m
+[32m  {[39m
+[32m    path: '/api/contactAuth/signup',[39m
+[32m    methods: [ 'POST' ],[39m
+[32m    middlewares: [[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'anonymous'[39m
+[32m    ][39m
+[32m  },[39m
+[32m  {[39m
+[32m    path: '/api/contactAuth/signin',[39m
+[32m    methods: [ 'POST' ],[39m
+[32m    middlewares: [ 'middleware', 'middleware', 'anonymous' ][39m
+[32m  },[39m
+[32m  {[39m
+[32m    path: '/api/contact/create',[39m
+[32m    methods: [ 'POST' ],[39m
+[32m    middlewares: [[39m
+[32m      'anonymous',[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'anonymous'[39m
+[32m    ][39m
+[32m  },[39m
+[32m  {[39m
+[32m    path: '/api/contact',[39m
+[32m    methods: [ 'GET' ],[39m
+[32m    middlewares: [ 'anonymous', 'anonymous' ][39m
+[32m  },[39m
+[32m  {[39m
+[32m    path: '/api/contact/:id',[39m
+[32m    methods: [ 'PUT', 'DELETE' ],[39m
+[32m    middlewares: [ 'anonymous', 'anonymous' ][39m
+[32m  }[39m
+[32m][39m
+2023-08-02 14:40:23:4023 [32minfo[39m: [32mserver  is listening on port 5000[39m
+2023-08-02 14:40:25:4025 [32minfo[39m: [32mdatabase has been connected successfully to "ac-ngmjyow-shard-00-01.d8bojru.mongodb.net"[39m
+2023-08-02 14:42:00:420 [32minfo[39m: [32m[[39m
+[32m  { path: '/', methods: [ 'GET' ], middlewares: [ 'anonymous' ] },[39m
+[32m  {[39m
+[32m    path: '/api/media/upload',[39m
+[32m    methods: [ 'POST' ],[39m
+[32m    middlewares: [ 'multerMiddleware', 'anonymous' ][39m
+[32m  },[39m
+[32m  {[39m
+[32m    path: '/api/contactAuth/signup',[39m
+[32m    methods: [ 'POST' ],[39m
+[32m    middlewares: [[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'anonymous'[39m
+[32m    ][39m
+[32m  },[39m
+[32m  {[39m
+[32m    path: '/api/contactAuth/signin',[39m
+[32m    methods: [ 'POST' ],[39m
+[32m    middlewares: [ 'middleware', 'middleware', 'anonymous' ][39m
+[32m  },[39m
+[32m  {[39m
+[32m    path: '/api/contact/create',[39m
+[32m    methods: [ 'POST' ],[39m
+[32m    middlewares: [[39m
+[32m      'anonymous',[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'anonymous'[39m
+[32m    ][39m
+[32m  },[39m
+[32m  {[39m
+[32m    path: '/api/contact',[39m
+[32m    methods: [ 'GET' ],[39m
+[32m    middlewares: [ 'anonymous', 'anonymous' ][39m
+[32m  },[39m
+[32m  {[39m
+[32m    path: '/api/contact/:id',[39m
+[32m    methods: [ 'PUT', 'DELETE' ],[39m
+[32m    middlewares: [ 'anonymous', 'anonymous' ][39m
+[32m  }[39m
+[32m][39m
+2023-08-02 14:42:00:420 [32minfo[39m: [32mserver  is listening on port 5000[39m
+2023-08-02 14:42:02:422 [32minfo[39m: [32mdatabase has been connected successfully to "ac-ngmjyow-shard-00-01.d8bojru.mongodb.net"[39m
+2023-08-02 14:42:27:4227 [32minfo[39m: [32m[[39m
+[32m  { path: '/', methods: [ 'GET' ], middlewares: [ 'anonymous' ] },[39m
+[32m  {[39m
+[32m    path: '/api/media/upload',[39m
+[32m    methods: [ 'POST' ],[39m
+[32m    middlewares: [ 'multerMiddleware', 'anonymous' ][39m
+[32m  },[39m
+[32m  {[39m
+[32m    path: '/api/contactAuth/signup',[39m
+[32m    methods: [ 'POST' ],[39m
+[32m    middlewares: [[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'anonymous'[39m
+[32m    ][39m
+[32m  },[39m
+[32m  {[39m
+[32m    path: '/api/contactAuth/signin',[39m
+[32m    methods: [ 'POST' ],[39m
+[32m    middlewares: [ 'middleware', 'middleware', 'anonymous' ][39m
+[32m  },[39m
+[32m  {[39m
+[32m    path: '/api/contact/create',[39m
+[32m    methods: [ 'POST' ],[39m
+[32m    middlewares: [[39m
+[32m      'anonymous',[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'anonymous'[39m
+[32m    ][39m
+[32m  },[39m
+[32m  {[39m
+[32m    path: '/api/contact',[39m
+[32m    methods: [ 'GET' ],[39m
+[32m    middlewares: [ 'anonymous', 'anonymous' ][39m
+[32m  },[39m
+[32m  {[39m
+[32m    path: '/api/contact/:id',[39m
+[32m    methods: [ 'PUT', 'DELETE' ],[39m
+[32m    middlewares: [ 'anonymous', 'anonymous' ][39m
+[32m  }[39m
+[32m][39m
+2023-08-02 14:42:27:4227 [32minfo[39m: [32mserver  is listening on port 5000[39m
+2023-08-02 14:42:29:4229 [32minfo[39m: [32mdatabase has been connected successfully to "ac-ngmjyow-shard-00-00.d8bojru.mongodb.net"[39m
+2023-08-02 14:43:16:4316 [32minfo[39m: [32m[[39m
+[32m  { path: '/', methods: [ 'GET' ], middlewares: [ 'anonymous' ] },[39m
+[32m  {[39m
+[32m    path: '/api/media/upload',[39m
+[32m    methods: [ 'POST' ],[39m
+[32m    middlewares: [ 'multerMiddleware', 'anonymous' ][39m
+[32m  },[39m
+[32m  {[39m
+[32m    path: '/api/contactAuth/signup',[39m
+[32m    methods: [ 'POST' ],[39m
+[32m    middlewares: [[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'anonymous'[39m
+[32m    ][39m
+[32m  },[39m
+[32m  {[39m
+[32m    path: '/api/contactAuth/signin',[39m
+[32m    methods: [ 'POST' ],[39m
+[32m    middlewares: [ 'middleware', 'middleware', 'anonymous' ][39m
+[32m  },[39m
+[32m  {[39m
+[32m    path: '/api/contact/create',[39m
+[32m    methods: [ 'POST' ],[39m
+[32m    middlewares: [[39m
+[32m      'anonymous',[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'anonymous'[39m
+[32m    ][39m
+[32m  },[39m
+[32m  {[39m
+[32m    path: '/api/contact',[39m
+[32m    methods: [ 'GET' ],[39m
+[32m    middlewares: [ 'anonymous', 'anonymous' ][39m
+[32m  },[39m
+[32m  {[39m
+[32m    path: '/api/contact/:id',[39m
+[32m    methods: [ 'PUT', 'DELETE' ],[39m
+[32m    middlewares: [ 'anonymous', 'anonymous' ][39m
+[32m  }[39m
+[32m][39m
+2023-08-02 14:43:16:4316 [32minfo[39m: [32mserver  is listening on port 5000[39m
+2023-08-02 14:43:18:4318 [32minfo[39m: [32mdatabase has been connected successfully to "ac-ngmjyow-shard-00-02.d8bojru.mongodb.net"[39m
+2023-08-02 14:43:34:4334 [32minfo[39m: [32m[[39m
+[32m  { path: '/', methods: [ 'GET' ], middlewares: [ 'anonymous' ] },[39m
+[32m  {[39m
+[32m    path: '/api/media/upload',[39m
+[32m    methods: [ 'POST' ],[39m
+[32m    middlewares: [ 'multerMiddleware', 'anonymous' ][39m
+[32m  },[39m
+[32m  {[39m
+[32m    path: '/api/contactAuth/signup',[39m
+[32m    methods: [ 'POST' ],[39m
+[32m    middlewares: [[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'anonymous'[39m
+[32m    ][39m
+[32m  },[39m
+[32m  {[39m
+[32m    path: '/api/contactAuth/signin',[39m
+[32m    methods: [ 'POST' ],[39m
+[32m    middlewares: [ 'middleware', 'middleware', 'anonymous' ][39m
+[32m  },[39m
+[32m  {[39m
+[32m    path: '/api/contact/create',[39m
+[32m    methods: [ 'POST' ],[39m
+[32m    middlewares: [[39m
+[32m      'anonymous',[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'anonymous'[39m
+[32m    ][39m
+[32m  },[39m
+[32m  {[39m
+[32m    path: '/api/contact',[39m
+[32m    methods: [ 'GET' ],[39m
+[32m    middlewares: [ 'anonymous', 'anonymous' ][39m
+[32m  },[39m
+[32m  {[39m
+[32m    path: '/api/contact/:id',[39m
+[32m    methods: [ 'PUT', 'DELETE' ],[39m
+[32m    middlewares: [ 'anonymous', 'anonymous' ][39m
+[32m  }[39m
+[32m][39m
+2023-08-02 14:43:34:4334 [32minfo[39m: [32mserver  is listening on port 5000[39m
+2023-08-02 14:43:53:4353 [32minfo[39m: [32m[[39m
+[32m  { path: '/', methods: [ 'GET' ], middlewares: [ 'anonymous' ] },[39m
+[32m  {[39m
+[32m    path: '/api/media/upload',[39m
+[32m    methods: [ 'POST' ],[39m
+[32m    middlewares: [ 'multerMiddleware', 'anonymous' ][39m
+[32m  },[39m
+[32m  {[39m
+[32m    path: '/api/contactAuth/signup',[39m
+[32m    methods: [ 'POST' ],[39m
+[32m    middlewares: [[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'anonymous'[39m
+[32m    ][39m
+[32m  },[39m
+[32m  {[39m
+[32m    path: '/api/contactAuth/signin',[39m
+[32m    methods: [ 'POST' ],[39m
+[32m    middlewares: [ 'middleware', 'middleware', 'anonymous' ][39m
+[32m  },[39m
+[32m  {[39m
+[32m    path: '/api/contact/create',[39m
+[32m    methods: [ 'POST' ],[39m
+[32m    middlewares: [[39m
+[32m      'anonymous',[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'anonymous'[39m
+[32m    ][39m
+[32m  },[39m
+[32m  {[39m
+[32m    path: '/api/contact',[39m
+[32m    methods: [ 'GET' ],[39m
+[32m    middlewares: [ 'anonymous', 'anonymous' ][39m
+[32m  },[39m
+[32m  {[39m
+[32m    path: '/api/contact/:id',[39m
+[32m    methods: [ 'PUT', 'DELETE' ],[39m
+[32m    middlewares: [ 'anonymous', 'anonymous' ][39m
+[32m  }[39m
+[32m][39m
+2023-08-02 14:43:53:4353 [32minfo[39m: [32mserver  is listening on port 5000[39m
+2023-08-02 14:43:55:4355 [32minfo[39m: [32mdatabase has been connected successfully to "ac-ngmjyow-shard-00-02.d8bojru.mongodb.net"[39m
+2023-08-02 14:44:20:4420 [32minfo[39m: [32m[[39m
+[32m  { path: '/', methods: [ 'GET' ], middlewares: [ 'anonymous' ] },[39m
+[32m  {[39m
+[32m    path: '/api/media/upload',[39m
+[32m    methods: [ 'POST' ],[39m
+[32m    middlewares: [ 'multerMiddleware', 'anonymous' ][39m
+[32m  },[39m
+[32m  {[39m
+[32m    path: '/api/contactAuth/signup',[39m
+[32m    methods: [ 'POST' ],[39m
+[32m    middlewares: [[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'anonymous'[39m
+[32m    ][39m
+[32m  },[39m
+[32m  {[39m
+[32m    path: '/api/contactAuth/signin',[39m
+[32m    methods: [ 'POST' ],[39m
+[32m    middlewares: [ 'middleware', 'middleware', 'anonymous' ][39m
+[32m  },[39m
+[32m  {[39m
+[32m    path: '/api/contact/create',[39m
+[32m    methods: [ 'POST' ],[39m
+[32m    middlewares: [[39m
+[32m      'anonymous',[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'anonymous'[39m
+[32m    ][39m
+[32m  },[39m
+[32m  {[39m
+[32m    path: '/api/contact',[39m
+[32m    methods: [ 'GET' ],[39m
+[32m    middlewares: [ 'anonymous', 'anonymous' ][39m
+[32m  },[39m
+[32m  {[39m
+[32m    path: '/api/contact/:id',[39m
+[32m    methods: [ 'PUT', 'DELETE' ],[39m
+[32m    middlewares: [ 'anonymous', 'anonymous' ][39m
+[32m  }[39m
+[32m][39m
+2023-08-02 14:44:20:4420 [32minfo[39m: [32mserver  is listening on port 5000[39m
+2023-08-02 14:44:22:4422 [32minfo[39m: [32mdatabase has been connected successfully to "ac-ngmjyow-shard-00-00.d8bojru.mongodb.net"[39m
+2023-08-02 14:44:36:4436 [32minfo[39m: [32m[[39m
+[32m  { path: '/', methods: [ 'GET' ], middlewares: [ 'anonymous' ] },[39m
+[32m  {[39m
+[32m    path: '/api/media/upload',[39m
+[32m    methods: [ 'POST' ],[39m
+[32m    middlewares: [ 'multerMiddleware', 'anonymous' ][39m
+[32m  },[39m
+[32m  {[39m
+[32m    path: '/api/contactAuth/signup',[39m
+[32m    methods: [ 'POST' ],[39m
+[32m    middlewares: [[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'anonymous'[39m
+[32m    ][39m
+[32m  },[39m
+[32m  {[39m
+[32m    path: '/api/contactAuth/signin',[39m
+[32m    methods: [ 'POST' ],[39m
+[32m    middlewares: [ 'middleware', 'middleware', 'anonymous' ][39m
+[32m  },[39m
+[32m  {[39m
+[32m    path: '/api/contact/create',[39m
+[32m    methods: [ 'POST' ],[39m
+[32m    middlewares: [[39m
+[32m      'anonymous',[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'anonymous'[39m
+[32m    ][39m
+[32m  },[39m
+[32m  {[39m
+[32m    path: '/api/contact',[39m
+[32m    methods: [ 'GET' ],[39m
+[32m    middlewares: [ 'anonymous', 'anonymous' ][39m
+[32m  },[39m
+[32m  {[39m
+[32m    path: '/api/contact/:id',[39m
+[32m    methods: [ 'PUT', 'DELETE' ],[39m
+[32m    middlewares: [ 'anonymous', 'anonymous' ][39m
+[32m  }[39m
+[32m][39m
+2023-08-02 14:44:36:4436 [32minfo[39m: [32mserver  is listening on port 5000[39m
+2023-08-02 14:44:37:4437 [32minfo[39m: [32mdatabase has been connected successfully to "ac-ngmjyow-shard-00-00.d8bojru.mongodb.net"[39m
+2023-08-02 14:44:51:4451 [32minfo[39m: [32m[[39m
+[32m  { path: '/', methods: [ 'GET' ], middlewares: [ 'anonymous' ] },[39m
+[32m  {[39m
+[32m    path: '/api/media/upload',[39m
+[32m    methods: [ 'POST' ],[39m
+[32m    middlewares: [ 'multerMiddleware', 'anonymous' ][39m
+[32m  },[39m
+[32m  {[39m
+[32m    path: '/api/contactAuth/signup',[39m
+[32m    methods: [ 'POST' ],[39m
+[32m    middlewares: [[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'anonymous'[39m
+[32m    ][39m
+[32m  },[39m
+[32m  {[39m
+[32m    path: '/api/contactAuth/signin',[39m
+[32m    methods: [ 'POST' ],[39m
+[32m    middlewares: [ 'middleware', 'middleware', 'anonymous' ][39m
+[32m  },[39m
+[32m  {[39m
+[32m    path: '/api/contact/create',[39m
+[32m    methods: [ 'POST' ],[39m
+[32m    middlewares: [[39m
+[32m      'anonymous',[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'anonymous'[39m
+[32m    ][39m
+[32m  },[39m
+[32m  {[39m
+[32m    path: '/api/contact',[39m
+[32m    methods: [ 'GET' ],[39m
+[32m    middlewares: [ 'anonymous', 'anonymous' ][39m
+[32m  },[39m
+[32m  {[39m
+[32m    path: '/api/contact/:id',[39m
+[32m    methods: [ 'PUT', 'DELETE' ],[39m
+[32m    middlewares: [ 'anonymous', 'anonymous' ][39m
+[32m  }[39m
+[32m][39m
+2023-08-02 14:44:51:4451 [32minfo[39m: [32mserver  is listening on port 5000[39m
+2023-08-02 14:45:25:4525 [32minfo[39m: [32m[[39m
+[32m  { path: '/', methods: [ 'GET' ], middlewares: [ 'anonymous' ] },[39m
+[32m  {[39m
+[32m    path: '/api/media/upload',[39m
+[32m    methods: [ 'POST' ],[39m
+[32m    middlewares: [ 'multerMiddleware', 'anonymous' ][39m
+[32m  },[39m
+[32m  {[39m
+[32m    path: '/api/contactAuth/signup',[39m
+[32m    methods: [ 'POST' ],[39m
+[32m    middlewares: [[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'anonymous'[39m
+[32m    ][39m
+[32m  },[39m
+[32m  {[39m
+[32m    path: '/api/contactAuth/signin',[39m
+[32m    methods: [ 'POST' ],[39m
+[32m    middlewares: [ 'middleware', 'middleware', 'anonymous' ][39m
+[32m  },[39m
+[32m  {[39m
+[32m    path: '/api/contact/create',[39m
+[32m    methods: [ 'POST' ],[39m
+[32m    middlewares: [[39m
+[32m      'anonymous',[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'anonymous'[39m
+[32m    ][39m
+[32m  },[39m
+[32m  {[39m
+[32m    path: '/api/contact',[39m
+[32m    methods: [ 'GET' ],[39m
+[32m    middlewares: [ 'anonymous', 'anonymous' ][39m
+[32m  },[39m
+[32m  {[39m
+[32m    path: '/api/contact/:id',[39m
+[32m    methods: [ 'PUT', 'DELETE' ],[39m
+[32m    middlewares: [ 'anonymous', 'anonymous' ][39m
+[32m  }[39m
+[32m][39m
+2023-08-02 14:45:25:4525 [32minfo[39m: [32mserver  is listening on port 5000[39m
+2023-08-02 14:45:27:4527 [32minfo[39m: [32mdatabase has been connected successfully to "ac-ngmjyow-shard-00-01.d8bojru.mongodb.net"[39m
+2023-08-02 14:45:49:4549 [32minfo[39m: [32m[[39m
+[32m  { path: '/', methods: [ 'GET' ], middlewares: [ 'anonymous' ] },[39m
+[32m  {[39m
+[32m    path: '/api/media/upload',[39m
+[32m    methods: [ 'POST' ],[39m
+[32m    middlewares: [ 'multerMiddleware', 'anonymous' ][39m
+[32m  },[39m
+[32m  {[39m
+[32m    path: '/api/contactAuth/signup',[39m
+[32m    methods: [ 'POST' ],[39m
+[32m    middlewares: [[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'anonymous'[39m
+[32m    ][39m
+[32m  },[39m
+[32m  {[39m
+[32m    path: '/api/contactAuth/signin',[39m
+[32m    methods: [ 'POST' ],[39m
+[32m    middlewares: [ 'middleware', 'middleware', 'anonymous' ][39m
+[32m  },[39m
+[32m  {[39m
+[32m    path: '/api/contact/create',[39m
+[32m    methods: [ 'POST' ],[39m
+[32m    middlewares: [[39m
+[32m      'anonymous',[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'anonymous'[39m
+[32m    ][39m
+[32m  },[39m
+[32m  {[39m
+[32m    path: '/api/contact',[39m
+[32m    methods: [ 'GET' ],[39m
+[32m    middlewares: [ 'anonymous', 'anonymous' ][39m
+[32m  },[39m
+[32m  {[39m
+[32m    path: '/api/contact/:id',[39m
+[32m    methods: [ 'PUT', 'DELETE' ],[39m
+[32m    middlewares: [ 'anonymous', 'anonymous' ][39m
+[32m  }[39m
+[32m][39m
+2023-08-02 14:45:49:4549 [32minfo[39m: [32mserver  is listening on port 5000[39m
+2023-08-02 14:45:51:4551 [32minfo[39m: [32mdatabase has been connected successfully to "ac-ngmjyow-shard-00-00.d8bojru.mongodb.net"[39m
+2023-08-02 14:46:19:4619 [32minfo[39m: [32m[[39m
+[32m  { path: '/', methods: [ 'GET' ], middlewares: [ 'anonymous' ] },[39m
+[32m  {[39m
+[32m    path: '/api/media/upload',[39m
+[32m    methods: [ 'POST' ],[39m
+[32m    middlewares: [ 'multerMiddleware', 'anonymous' ][39m
+[32m  },[39m
+[32m  {[39m
+[32m    path: '/api/contactAuth/signup',[39m
+[32m    methods: [ 'POST' ],[39m
+[32m    middlewares: [[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'anonymous'[39m
+[32m    ][39m
+[32m  },[39m
+[32m  {[39m
+[32m    path: '/api/contactAuth/signin',[39m
+[32m    methods: [ 'POST' ],[39m
+[32m    middlewares: [ 'middleware', 'middleware', 'anonymous' ][39m
+[32m  },[39m
+[32m  {[39m
+[32m    path: '/api/contact/create',[39m
+[32m    methods: [ 'POST' ],[39m
+[32m    middlewares: [[39m
+[32m      'anonymous',[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'anonymous'[39m
+[32m    ][39m
+[32m  },[39m
+[32m  {[39m
+[32m    path: '/api/contact',[39m
+[32m    methods: [ 'GET' ],[39m
+[32m    middlewares: [ 'anonymous', 'anonymous' ][39m
+[32m  },[39m
+[32m  {[39m
+[32m    path: '/api/contact/:id',[39m
+[32m    methods: [ 'PUT', 'DELETE' ],[39m
+[32m    middlewares: [ 'anonymous', 'anonymous' ][39m
+[32m  }[39m
+[32m][39m
+2023-08-02 14:46:19:4619 [32minfo[39m: [32mserver  is listening on port 5000[39m
+2023-08-02 14:46:21:4621 [32minfo[39m: [32mdatabase has been connected successfully to "ac-ngmjyow-shard-00-00.d8bojru.mongodb.net"[39m
+2023-08-02 14:46:56:4656 [32minfo[39m: [32m[[39m
+[32m  { path: '/', methods: [ 'GET' ], middlewares: [ 'anonymous' ] },[39m
+[32m  {[39m
+[32m    path: '/api/media/upload',[39m
+[32m    methods: [ 'POST' ],[39m
+[32m    middlewares: [ 'multerMiddleware', 'anonymous' ][39m
+[32m  },[39m
+[32m  {[39m
+[32m    path: '/api/contactAuth/signup',[39m
+[32m    methods: [ 'POST' ],[39m
+[32m    middlewares: [[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'anonymous'[39m
+[32m    ][39m
+[32m  },[39m
+[32m  {[39m
+[32m    path: '/api/contactAuth/signin',[39m
+[32m    methods: [ 'POST' ],[39m
+[32m    middlewares: [ 'middleware', 'middleware', 'anonymous' ][39m
+[32m  },[39m
+[32m  {[39m
+[32m    path: '/api/contact/create',[39m
+[32m    methods: [ 'POST' ],[39m
+[32m    middlewares: [[39m
+[32m      'anonymous',[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'anonymous'[39m
+[32m    ][39m
+[32m  },[39m
+[32m  {[39m
+[32m    path: '/api/contact',[39m
+[32m    methods: [ 'GET' ],[39m
+[32m    middlewares: [ 'anonymous', 'anonymous' ][39m
+[32m  },[39m
+[32m  {[39m
+[32m    path: '/api/contact/:id',[39m
+[32m    methods: [ 'PUT', 'DELETE' ],[39m
+[32m    middlewares: [ 'anonymous', 'anonymous' ][39m
+[32m  }[39m
+[32m][39m
+2023-08-02 14:46:56:4656 [32minfo[39m: [32mserver  is listening on port 5000[39m
+2023-08-02 14:47:00:470 [32minfo[39m: [32mdatabase has been connected successfully to "ac-ngmjyow-shard-00-02.d8bojru.mongodb.net"[39m
+2023-08-02 14:47:16:4716 [32minfo[39m: [32m[[39m
+[32m  { path: '/', methods: [ 'GET' ], middlewares: [ 'anonymous' ] },[39m
+[32m  {[39m
+[32m    path: '/api/media/upload',[39m
+[32m    methods: [ 'POST' ],[39m
+[32m    middlewares: [ 'multerMiddleware', 'anonymous' ][39m
+[32m  },[39m
+[32m  {[39m
+[32m    path: '/api/contactAuth/signup',[39m
+[32m    methods: [ 'POST' ],[39m
+[32m    middlewares: [[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'anonymous'[39m
+[32m    ][39m
+[32m  },[39m
+[32m  {[39m
+[32m    path: '/api/contactAuth/signin',[39m
+[32m    methods: [ 'POST' ],[39m
+[32m    middlewares: [ 'middleware', 'middleware', 'anonymous' ][39m
+[32m  },[39m
+[32m  {[39m
+[32m    path: '/api/contact/create',[39m
+[32m    methods: [ 'POST' ],[39m
+[32m    middlewares: [[39m
+[32m      'anonymous',[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'anonymous'[39m
+[32m    ][39m
+[32m  },[39m
+[32m  {[39m
+[32m    path: '/api/contact',[39m
+[32m    methods: [ 'GET' ],[39m
+[32m    middlewares: [ 'anonymous', 'anonymous' ][39m
+[32m  },[39m
+[32m  {[39m
+[32m    path: '/api/contact/:id',[39m
+[32m    methods: [ 'PUT', 'DELETE' ],[39m
+[32m    middlewares: [ 'anonymous', 'anonymous' ][39m
+[32m  }[39m
+[32m][39m
+2023-08-02 14:47:16:4716 [32minfo[39m: [32mserver  is listening on port 5000[39m
+2023-08-02 14:47:18:4718 [32minfo[39m: [32mdatabase has been connected successfully to "ac-ngmjyow-shard-00-01.d8bojru.mongodb.net"[39m
+2023-08-02 14:49:13:4913 [32minfo[39m: [32m[[39m
+[32m  { path: '/', methods: [ 'GET' ], middlewares: [ 'anonymous' ] },[39m
+[32m  {[39m
+[32m    path: '/api/media/upload',[39m
+[32m    methods: [ 'POST' ],[39m
+[32m    middlewares: [ 'multerMiddleware', 'anonymous' ][39m
+[32m  },[39m
+[32m  {[39m
+[32m    path: '/api/contactAuth/signup',[39m
+[32m    methods: [ 'POST' ],[39m
+[32m    middlewares: [[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'anonymous'[39m
+[32m    ][39m
+[32m  },[39m
+[32m  {[39m
+[32m    path: '/api/contactAuth/signin',[39m
+[32m    methods: [ 'POST' ],[39m
+[32m    middlewares: [ 'middleware', 'middleware', 'anonymous' ][39m
+[32m  },[39m
+[32m  {[39m
+[32m    path: '/api/contact/create',[39m
+[32m    methods: [ 'POST' ],[39m
+[32m    middlewares: [[39m
+[32m      'anonymous',[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'anonymous'[39m
+[32m    ][39m
+[32m  },[39m
+[32m  {[39m
+[32m    path: '/api/contact',[39m
+[32m    methods: [ 'GET' ],[39m
+[32m    middlewares: [ 'anonymous', 'anonymous' ][39m
+[32m  },[39m
+[32m  {[39m
+[32m    path: '/api/contact/:id',[39m
+[32m    methods: [ 'PUT', 'DELETE' ],[39m
+[32m    middlewares: [ 'anonymous', 'anonymous' ][39m
+[32m  }[39m
+[32m][39m
+2023-08-02 14:49:13:4913 [32minfo[39m: [32mserver  is listening on port 5000[39m
+2023-08-02 14:49:15:4915 [32minfo[39m: [32mdatabase has been connected successfully to "ac-ngmjyow-shard-00-00.d8bojru.mongodb.net"[39m
+2023-08-02 14:49:47:4947 [32minfo[39m: [32m[[39m
+[32m  { path: '/', methods: [ 'GET' ], middlewares: [ 'anonymous' ] },[39m
+[32m  {[39m
+[32m    path: '/api/media/upload',[39m
+[32m    methods: [ 'POST' ],[39m
+[32m    middlewares: [ 'multerMiddleware', 'anonymous' ][39m
+[32m  },[39m
+[32m  {[39m
+[32m    path: '/api/contactAuth/signup',[39m
+[32m    methods: [ 'POST' ],[39m
+[32m    middlewares: [[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'anonymous'[39m
+[32m    ][39m
+[32m  },[39m
+[32m  {[39m
+[32m    path: '/api/contactAuth/signin',[39m
+[32m    methods: [ 'POST' ],[39m
+[32m    middlewares: [ 'middleware', 'middleware', 'anonymous' ][39m
+[32m  },[39m
+[32m  {[39m
+[32m    path: '/api/contact/create',[39m
+[32m    methods: [ 'POST' ],[39m
+[32m    middlewares: [[39m
+[32m      'anonymous',[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'anonymous'[39m
+[32m    ][39m
+[32m  },[39m
+[32m  {[39m
+[32m    path: '/api/contact',[39m
+[32m    methods: [ 'GET' ],[39m
+[32m    middlewares: [ 'anonymous', 'anonymous' ][39m
+[32m  },[39m
+[32m  {[39m
+[32m    path: '/api/contact/:id',[39m
+[32m    methods: [ 'PUT', 'DELETE' ],[39m
+[32m    middlewares: [ 'anonymous', 'anonymous' ][39m
+[32m  }[39m
+[32m][39m
+2023-08-02 14:49:47:4947 [32minfo[39m: [32mserver  is listening on port 5000[39m
+2023-08-02 14:49:49:4949 [32minfo[39m: [32mdatabase has been connected successfully to "ac-ngmjyow-shard-00-00.d8bojru.mongodb.net"[39m
+2023-08-02 14:50:00:500 [32minfo[39m: [32m[[39m
+[32m  { path: '/', methods: [ 'GET' ], middlewares: [ 'anonymous' ] },[39m
+[32m  {[39m
+[32m    path: '/api/media/upload',[39m
+[32m    methods: [ 'POST' ],[39m
+[32m    middlewares: [ 'multerMiddleware', 'anonymous' ][39m
+[32m  },[39m
+[32m  {[39m
+[32m    path: '/api/contactAuth/signup',[39m
+[32m    methods: [ 'POST' ],[39m
+[32m    middlewares: [[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'anonymous'[39m
+[32m    ][39m
+[32m  },[39m
+[32m  {[39m
+[32m    path: '/api/contactAuth/signin',[39m
+[32m    methods: [ 'POST' ],[39m
+[32m    middlewares: [ 'middleware', 'middleware', 'anonymous' ][39m
+[32m  },[39m
+[32m  {[39m
+[32m    path: '/api/contact/create',[39m
+[32m    methods: [ 'POST' ],[39m
+[32m    middlewares: [[39m
+[32m      'anonymous',[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'anonymous'[39m
+[32m    ][39m
+[32m  },[39m
+[32m  {[39m
+[32m    path: '/api/contact',[39m
+[32m    methods: [ 'GET' ],[39m
+[32m    middlewares: [ 'anonymous', 'anonymous' ][39m
+[32m  },[39m
+[32m  {[39m
+[32m    path: '/api/contact/:id',[39m
+[32m    methods: [ 'PUT', 'DELETE' ],[39m
+[32m    middlewares: [ 'anonymous', 'anonymous' ][39m
+[32m  }[39m
+[32m][39m
+2023-08-02 14:50:00:500 [32minfo[39m: [32mserver  is listening on port 5000[39m
+2023-08-02 14:50:02:502 [32minfo[39m: [32mdatabase has been connected successfully to "ac-ngmjyow-shard-00-01.d8bojru.mongodb.net"[39m
+2023-08-02 14:50:18:5018 [32minfo[39m: [32m[[39m
+[32m  { path: '/', methods: [ 'GET' ], middlewares: [ 'anonymous' ] },[39m
+[32m  {[39m
+[32m    path: '/api/media/upload',[39m
+[32m    methods: [ 'POST' ],[39m
+[32m    middlewares: [ 'multerMiddleware', 'anonymous' ][39m
+[32m  },[39m
+[32m  {[39m
+[32m    path: '/api/contactAuth/signup',[39m
+[32m    methods: [ 'POST' ],[39m
+[32m    middlewares: [[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'anonymous'[39m
+[32m    ][39m
+[32m  },[39m
+[32m  {[39m
+[32m    path: '/api/contactAuth/signin',[39m
+[32m    methods: [ 'POST' ],[39m
+[32m    middlewares: [ 'middleware', 'middleware', 'anonymous' ][39m
+[32m  },[39m
+[32m  {[39m
+[32m    path: '/api/contact/create',[39m
+[32m    methods: [ 'POST' ],[39m
+[32m    middlewares: [[39m
+[32m      'anonymous',[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'anonymous'[39m
+[32m    ][39m
+[32m  },[39m
+[32m  {[39m
+[32m    path: '/api/contact',[39m
+[32m    methods: [ 'GET' ],[39m
+[32m    middlewares: [ 'anonymous', 'anonymous' ][39m
+[32m  },[39m
+[32m  {[39m
+[32m    path: '/api/contact/:id',[39m
+[32m    methods: [ 'PUT', 'DELETE' ],[39m
+[32m    middlewares: [ 'anonymous', 'anonymous' ][39m
+[32m  }[39m
+[32m][39m
+2023-08-02 14:50:18:5018 [32minfo[39m: [32mserver  is listening on port 5000[39m
+2023-08-02 14:50:20:5020 [32minfo[39m: [32mdatabase has been connected successfully to "ac-ngmjyow-shard-00-02.d8bojru.mongodb.net"[39m
+2023-08-02 14:50:33:5033 [32minfo[39m: [32m[[39m
+[32m  { path: '/', methods: [ 'GET' ], middlewares: [ 'anonymous' ] },[39m
+[32m  {[39m
+[32m    path: '/api/media/upload',[39m
+[32m    methods: [ 'POST' ],[39m
+[32m    middlewares: [ 'multerMiddleware', 'anonymous' ][39m
+[32m  },[39m
+[32m  {[39m
+[32m    path: '/api/contactAuth/signup',[39m
+[32m    methods: [ 'POST' ],[39m
+[32m    middlewares: [[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'anonymous'[39m
+[32m    ][39m
+[32m  },[39m
+[32m  {[39m
+[32m    path: '/api/contactAuth/signin',[39m
+[32m    methods: [ 'POST' ],[39m
+[32m    middlewares: [ 'middleware', 'middleware', 'anonymous' ][39m
+[32m  },[39m
+[32m  {[39m
+[32m    path: '/api/contact/create',[39m
+[32m    methods: [ 'POST' ],[39m
+[32m    middlewares: [[39m
+[32m      'anonymous',[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'anonymous'[39m
+[32m    ][39m
+[32m  },[39m
+[32m  {[39m
+[32m    path: '/api/contact',[39m
+[32m    methods: [ 'GET' ],[39m
+[32m    middlewares: [ 'anonymous', 'anonymous' ][39m
+[32m  },[39m
+[32m  {[39m
+[32m    path: '/api/contact/:id',[39m
+[32m    methods: [ 'PUT', 'DELETE' ],[39m
+[32m    middlewares: [ 'anonymous', 'anonymous' ][39m
+[32m  }[39m
+[32m][39m
+2023-08-02 14:50:33:5033 [32minfo[39m: [32mserver  is listening on port 5000[39m
+2023-08-02 14:50:35:5035 [32minfo[39m: [32mdatabase has been connected successfully to "ac-ngmjyow-shard-00-02.d8bojru.mongodb.net"[39m
+2023-08-02 14:50:48:5048 [32minfo[39m: [32m[[39m
+[32m  { path: '/', methods: [ 'GET' ], middlewares: [ 'anonymous' ] },[39m
+[32m  {[39m
+[32m    path: '/api/media/upload',[39m
+[32m    methods: [ 'POST' ],[39m
+[32m    middlewares: [ 'multerMiddleware', 'anonymous' ][39m
+[32m  },[39m
+[32m  {[39m
+[32m    path: '/api/contactAuth/signup',[39m
+[32m    methods: [ 'POST' ],[39m
+[32m    middlewares: [[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'anonymous'[39m
+[32m    ][39m
+[32m  },[39m
+[32m  {[39m
+[32m    path: '/api/contactAuth/signin',[39m
+[32m    methods: [ 'POST' ],[39m
+[32m    middlewares: [ 'middleware', 'middleware', 'anonymous' ][39m
+[32m  },[39m
+[32m  {[39m
+[32m    path: '/api/contact/create',[39m
+[32m    methods: [ 'POST' ],[39m
+[32m    middlewares: [[39m
+[32m      'anonymous',[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'anonymous'[39m
+[32m    ][39m
+[32m  },[39m
+[32m  {[39m
+[32m    path: '/api/contact',[39m
+[32m    methods: [ 'GET' ],[39m
+[32m    middlewares: [ 'anonymous', 'anonymous' ][39m
+[32m  },[39m
+[32m  {[39m
+[32m    path: '/api/contact/:id',[39m
+[32m    methods: [ 'PUT', 'DELETE' ],[39m
+[32m    middlewares: [ 'anonymous', 'anonymous' ][39m
+[32m  }[39m
+[32m][39m
+2023-08-02 14:50:48:5048 [32minfo[39m: [32mserver  is listening on port 5000[39m
+2023-08-02 14:50:51:5051 [32minfo[39m: [32mdatabase has been connected successfully to "ac-ngmjyow-shard-00-02.d8bojru.mongodb.net"[39m
+2023-08-02 14:51:21:5121 [32minfo[39m: [32m[[39m
+[32m  { path: '/', methods: [ 'GET' ], middlewares: [ 'anonymous' ] },[39m
+[32m  {[39m
+[32m    path: '/api/media/upload',[39m
+[32m    methods: [ 'POST' ],[39m
+[32m    middlewares: [ 'multerMiddleware', 'anonymous' ][39m
+[32m  },[39m
+[32m  {[39m
+[32m    path: '/api/contactAuth/signup',[39m
+[32m    methods: [ 'POST' ],[39m
+[32m    middlewares: [[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'anonymous'[39m
+[32m    ][39m
+[32m  },[39m
+[32m  {[39m
+[32m    path: '/api/contactAuth/signin',[39m
+[32m    methods: [ 'POST' ],[39m
+[32m    middlewares: [ 'middleware', 'middleware', 'anonymous' ][39m
+[32m  },[39m
+[32m  {[39m
+[32m    path: '/api/contact/create',[39m
+[32m    methods: [ 'POST' ],[39m
+[32m    middlewares: [[39m
+[32m      'anonymous',[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'anonymous'[39m
+[32m    ][39m
+[32m  },[39m
+[32m  {[39m
+[32m    path: '/api/contact',[39m
+[32m    methods: [ 'GET' ],[39m
+[32m    middlewares: [ 'anonymous', 'anonymous' ][39m
+[32m  },[39m
+[32m  {[39m
+[32m    path: '/api/contact/:id',[39m
+[32m    methods: [ 'PUT', 'DELETE' ],[39m
+[32m    middlewares: [ 'anonymous', 'anonymous' ][39m
+[32m  }[39m
+[32m][39m
+2023-08-02 14:51:21:5121 [32minfo[39m: [32mserver  is listening on port 5000[39m
+2023-08-02 14:51:23:5123 [32minfo[39m: [32mdatabase has been connected successfully to "ac-ngmjyow-shard-00-01.d8bojru.mongodb.net"[39m
+2023-08-02 14:51:40:5140 [32minfo[39m: [32m[[39m
+[32m  { path: '/', methods: [ 'GET' ], middlewares: [ 'anonymous' ] },[39m
+[32m  {[39m
+[32m    path: '/api/media/upload',[39m
+[32m    methods: [ 'POST' ],[39m
+[32m    middlewares: [ 'multerMiddleware', 'anonymous' ][39m
+[32m  },[39m
+[32m  {[39m
+[32m    path: '/api/contactAuth/signup',[39m
+[32m    methods: [ 'POST' ],[39m
+[32m    middlewares: [[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'anonymous'[39m
+[32m    ][39m
+[32m  },[39m
+[32m  {[39m
+[32m    path: '/api/contactAuth/signin',[39m
+[32m    methods: [ 'POST' ],[39m
+[32m    middlewares: [ 'middleware', 'middleware', 'anonymous' ][39m
+[32m  },[39m
+[32m  {[39m
+[32m    path: '/api/contact/create',[39m
+[32m    methods: [ 'POST' ],[39m
+[32m    middlewares: [[39m
+[32m      'anonymous',[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'anonymous'[39m
+[32m    ][39m
+[32m  },[39m
+[32m  {[39m
+[32m    path: '/api/contact',[39m
+[32m    methods: [ 'GET' ],[39m
+[32m    middlewares: [ 'anonymous', 'anonymous' ][39m
+[32m  },[39m
+[32m  {[39m
+[32m    path: '/api/contact/:id',[39m
+[32m    methods: [ 'PUT', 'DELETE' ],[39m
+[32m    middlewares: [ 'anonymous', 'anonymous' ][39m
+[32m  }[39m
+[32m][39m
+2023-08-02 14:51:40:5140 [32minfo[39m: [32mserver  is listening on port 5000[39m
+2023-08-02 14:51:41:5141 [32minfo[39m: [32mdatabase has been connected successfully to "ac-ngmjyow-shard-00-01.d8bojru.mongodb.net"[39m
+2023-08-02 14:52:37:5237 [32minfo[39m: [32m[[39m
+[32m  { path: '/', methods: [ 'GET' ], middlewares: [ 'anonymous' ] },[39m
+[32m  {[39m
+[32m    path: '/api/media/upload',[39m
+[32m    methods: [ 'POST' ],[39m
+[32m    middlewares: [ 'multerMiddleware', 'anonymous' ][39m
+[32m  },[39m
+[32m  {[39m
+[32m    path: '/api/contactAuth/signup',[39m
+[32m    methods: [ 'POST' ],[39m
+[32m    middlewares: [[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'anonymous'[39m
+[32m    ][39m
+[32m  },[39m
+[32m  {[39m
+[32m    path: '/api/contactAuth/signin',[39m
+[32m    methods: [ 'POST' ],[39m
+[32m    middlewares: [ 'middleware', 'middleware', 'anonymous' ][39m
+[32m  },[39m
+[32m  {[39m
+[32m    path: '/api/contact/create',[39m
+[32m    methods: [ 'POST' ],[39m
+[32m    middlewares: [[39m
+[32m      'anonymous',[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'anonymous'[39m
+[32m    ][39m
+[32m  },[39m
+[32m  {[39m
+[32m    path: '/api/contact',[39m
+[32m    methods: [ 'GET' ],[39m
+[32m    middlewares: [ 'anonymous', 'anonymous' ][39m
+[32m  },[39m
+[32m  {[39m
+[32m    path: '/api/contact/:id',[39m
+[32m    methods: [ 'PUT', 'DELETE' ],[39m
+[32m    middlewares: [ 'anonymous', 'anonymous' ][39m
+[32m  }[39m
+[32m][39m
+2023-08-02 14:52:37:5237 [32minfo[39m: [32mserver  is listening on port 5000[39m
+2023-08-02 14:52:39:5239 [32minfo[39m: [32mdatabase has been connected successfully to "ac-ngmjyow-shard-00-01.d8bojru.mongodb.net"[39m
+2023-08-02 14:52:54:5254 [32minfo[39m: [32m[[39m
+[32m  { path: '/', methods: [ 'GET' ], middlewares: [ 'anonymous' ] },[39m
+[32m  {[39m
+[32m    path: '/api/media/upload',[39m
+[32m    methods: [ 'POST' ],[39m
+[32m    middlewares: [ 'multerMiddleware', 'anonymous' ][39m
+[32m  },[39m
+[32m  {[39m
+[32m    path: '/api/contactAuth/signup',[39m
+[32m    methods: [ 'POST' ],[39m
+[32m    middlewares: [[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'anonymous'[39m
+[32m    ][39m
+[32m  },[39m
+[32m  {[39m
+[32m    path: '/api/contactAuth/signin',[39m
+[32m    methods: [ 'POST' ],[39m
+[32m    middlewares: [ 'middleware', 'middleware', 'anonymous' ][39m
+[32m  },[39m
+[32m  {[39m
+[32m    path: '/api/contact/create',[39m
+[32m    methods: [ 'POST' ],[39m
+[32m    middlewares: [[39m
+[32m      'anonymous',[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'anonymous'[39m
+[32m    ][39m
+[32m  },[39m
+[32m  {[39m
+[32m    path: '/api/contact',[39m
+[32m    methods: [ 'GET' ],[39m
+[32m    middlewares: [ 'anonymous', 'anonymous' ][39m
+[32m  },[39m
+[32m  {[39m
+[32m    path: '/api/contact/:id',[39m
+[32m    methods: [ 'PUT', 'DELETE' ],[39m
+[32m    middlewares: [ 'anonymous', 'anonymous' ][39m
+[32m  }[39m
+[32m][39m
+2023-08-02 14:52:54:5254 [32minfo[39m: [32mserver  is listening on port 5000[39m
+2023-08-02 14:52:56:5256 [32minfo[39m: [32mdatabase has been connected successfully to "ac-ngmjyow-shard-00-01.d8bojru.mongodb.net"[39m
+2023-08-02 14:53:45:5345 [32minfo[39m: [32m[[39m
+[32m  { path: '/', methods: [ 'GET' ], middlewares: [ 'anonymous' ] },[39m
+[32m  {[39m
+[32m    path: '/api/media/upload',[39m
+[32m    methods: [ 'POST' ],[39m
+[32m    middlewares: [ 'multerMiddleware', 'anonymous' ][39m
+[32m  },[39m
+[32m  {[39m
+[32m    path: '/api/contactAuth/signup',[39m
+[32m    methods: [ 'POST' ],[39m
+[32m    middlewares: [[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'anonymous'[39m
+[32m    ][39m
+[32m  },[39m
+[32m  {[39m
+[32m    path: '/api/contactAuth/signin',[39m
+[32m    methods: [ 'POST' ],[39m
+[32m    middlewares: [ 'middleware', 'middleware', 'anonymous' ][39m
+[32m  },[39m
+[32m  {[39m
+[32m    path: '/api/contact/create',[39m
+[32m    methods: [ 'POST' ],[39m
+[32m    middlewares: [[39m
+[32m      'anonymous',[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'anonymous'[39m
+[32m    ][39m
+[32m  },[39m
+[32m  {[39m
+[32m    path: '/api/contact',[39m
+[32m    methods: [ 'GET' ],[39m
+[32m    middlewares: [ 'anonymous', 'anonymous' ][39m
+[32m  },[39m
+[32m  {[39m
+[32m    path: '/api/contact/:id',[39m
+[32m    methods: [ 'PUT', 'DELETE' ],[39m
+[32m    middlewares: [ 'anonymous', 'anonymous' ][39m
+[32m  }[39m
+[32m][39m
+2023-08-02 14:53:45:5345 [32minfo[39m: [32mserver  is listening on port 5000[39m
+2023-08-02 14:53:48:5348 [32minfo[39m: [32mdatabase has been connected successfully to "ac-ngmjyow-shard-00-01.d8bojru.mongodb.net"[39m
+2023-08-02 14:54:07:547 [32minfo[39m: [32m[[39m
+[32m  { path: '/', methods: [ 'GET' ], middlewares: [ 'anonymous' ] },[39m
+[32m  {[39m
+[32m    path: '/api/media/upload',[39m
+[32m    methods: [ 'POST' ],[39m
+[32m    middlewares: [ 'multerMiddleware', 'anonymous' ][39m
+[32m  },[39m
+[32m  {[39m
+[32m    path: '/api/contactAuth/signup',[39m
+[32m    methods: [ 'POST' ],[39m
+[32m    middlewares: [[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'anonymous'[39m
+[32m    ][39m
+[32m  },[39m
+[32m  {[39m
+[32m    path: '/api/contactAuth/signin',[39m
+[32m    methods: [ 'POST' ],[39m
+[32m    middlewares: [ 'middleware', 'middleware', 'anonymous' ][39m
+[32m  },[39m
+[32m  {[39m
+[32m    path: '/api/contact/create',[39m
+[32m    methods: [ 'POST' ],[39m
+[32m    middlewares: [[39m
+[32m      'anonymous',[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'anonymous'[39m
+[32m    ][39m
+[32m  },[39m
+[32m  {[39m
+[32m    path: '/api/contact',[39m
+[32m    methods: [ 'GET' ],[39m
+[32m    middlewares: [ 'anonymous', 'anonymous' ][39m
+[32m  },[39m
+[32m  {[39m
+[32m    path: '/api/contact/:id',[39m
+[32m    methods: [ 'PUT', 'DELETE' ],[39m
+[32m    middlewares: [ 'anonymous', 'anonymous' ][39m
+[32m  }[39m
+[32m][39m
+2023-08-02 14:54:07:547 [32minfo[39m: [32mserver  is listening on port 5000[39m
+2023-08-02 14:54:08:548 [32minfo[39m: [32mdatabase has been connected successfully to "ac-ngmjyow-shard-00-00.d8bojru.mongodb.net"[39m
+2023-08-02 14:54:49:5449 [32minfo[39m: [32m[[39m
+[32m  { path: '/', methods: [ 'GET' ], middlewares: [ 'anonymous' ] },[39m
+[32m  {[39m
+[32m    path: '/api/media/upload',[39m
+[32m    methods: [ 'POST' ],[39m
+[32m    middlewares: [ 'multerMiddleware', 'anonymous' ][39m
+[32m  },[39m
+[32m  {[39m
+[32m    path: '/api/contactAuth/signup',[39m
+[32m    methods: [ 'POST' ],[39m
+[32m    middlewares: [[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'anonymous'[39m
+[32m    ][39m
+[32m  },[39m
+[32m  {[39m
+[32m    path: '/api/contactAuth/signin',[39m
+[32m    methods: [ 'POST' ],[39m
+[32m    middlewares: [ 'middleware', 'middleware', 'anonymous' ][39m
+[32m  },[39m
+[32m  {[39m
+[32m    path: '/api/contact/create',[39m
+[32m    methods: [ 'POST' ],[39m
+[32m    middlewares: [[39m
+[32m      'anonymous',[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'anonymous'[39m
+[32m    ][39m
+[32m  },[39m
+[32m  {[39m
+[32m    path: '/api/contact',[39m
+[32m    methods: [ 'GET' ],[39m
+[32m    middlewares: [ 'anonymous', 'anonymous' ][39m
+[32m  },[39m
+[32m  {[39m
+[32m    path: '/api/contact/:id',[39m
+[32m    methods: [ 'PUT', 'DELETE' ],[39m
+[32m    middlewares: [ 'anonymous', 'anonymous' ][39m
+[32m  }[39m
+[32m][39m
+2023-08-02 14:54:49:5449 [32minfo[39m: [32mserver  is listening on port 5000[39m
+2023-08-02 14:54:51:5451 [32minfo[39m: [32mdatabase has been connected successfully to "ac-ngmjyow-shard-00-00.d8bojru.mongodb.net"[39m
+2023-08-02 15:50:47:5047 [32minfo[39m: [32m[[39m
+[32m  { path: '/', methods: [ 'GET' ], middlewares: [ 'anonymous' ] },[39m
+[32m  {[39m
+[32m    path: '/api/media/upload',[39m
+[32m    methods: [ 'POST' ],[39m
+[32m    middlewares: [ 'multerMiddleware', 'anonymous' ][39m
+[32m  },[39m
+[32m  {[39m
+[32m    path: '/api/contactAuth/signup',[39m
+[32m    methods: [ 'POST' ],[39m
+[32m    middlewares: [[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'anonymous'[39m
+[32m    ][39m
+[32m  },[39m
+[32m  {[39m
+[32m    path: '/api/contactAuth/signin',[39m
+[32m    methods: [ 'POST' ],[39m
+[32m    middlewares: [ 'middleware', 'middleware', 'anonymous' ][39m
+[32m  },[39m
+[32m  {[39m
+[32m    path: '/api/contact/create',[39m
+[32m    methods: [ 'POST' ],[39m
+[32m    middlewares: [[39m
+[32m      'anonymous',[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'anonymous'[39m
+[32m    ][39m
+[32m  },[39m
+[32m  {[39m
+[32m    path: '/api/contact',[39m
+[32m    methods: [ 'GET' ],[39m
+[32m    middlewares: [ 'anonymous', 'anonymous' ][39m
+[32m  },[39m
+[32m  {[39m
+[32m    path: '/api/contact/:id',[39m
+[32m    methods: [ 'PUT', 'DELETE' ],[39m
+[32m    middlewares: [ 'anonymous', 'anonymous' ][39m
+[32m  }[39m
+[32m][39m
+2023-08-02 15:50:47:5047 [32minfo[39m: [32mserver  is listening on port 5000[39m
+2023-08-02 15:50:49:5049 [32minfo[39m: [32mdatabase has been connected successfully to "ac-ngmjyow-shard-00-00.d8bojru.mongodb.net"[39m
+2023-08-02 15:51:05:515 [32minfo[39m: [32m[[39m
+[32m  { path: '/', methods: [ 'GET' ], middlewares: [ 'anonymous' ] },[39m
+[32m  {[39m
+[32m    path: '/api/media/upload',[39m
+[32m    methods: [ 'POST' ],[39m
+[32m    middlewares: [ 'multerMiddleware', 'anonymous' ][39m
+[32m  },[39m
+[32m  {[39m
+[32m    path: '/api/contactAuth/signup',[39m
+[32m    methods: [ 'POST' ],[39m
+[32m    middlewares: [[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'anonymous'[39m
+[32m    ][39m
+[32m  },[39m
+[32m  {[39m
+[32m    path: '/api/contactAuth/signin',[39m
+[32m    methods: [ 'POST' ],[39m
+[32m    middlewares: [ 'middleware', 'middleware', 'anonymous' ][39m
+[32m  },[39m
+[32m  {[39m
+[32m    path: '/api/contact/create',[39m
+[32m    methods: [ 'POST' ],[39m
+[32m    middlewares: [[39m
+[32m      'anonymous',[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'anonymous'[39m
+[32m    ][39m
+[32m  },[39m
+[32m  {[39m
+[32m    path: '/api/contact',[39m
+[32m    methods: [ 'GET' ],[39m
+[32m    middlewares: [ 'anonymous', 'anonymous' ][39m
+[32m  },[39m
+[32m  {[39m
+[32m    path: '/api/contact/:id',[39m
+[32m    methods: [ 'PUT', 'DELETE' ],[39m
+[32m    middlewares: [ 'anonymous', 'anonymous' ][39m
+[32m  }[39m
+[32m][39m
+2023-08-02 15:51:05:515 [32minfo[39m: [32mserver  is listening on port 5000[39m
+2023-08-02 15:51:07:517 [32minfo[39m: [32mdatabase has been connected successfully to "ac-ngmjyow-shard-00-02.d8bojru.mongodb.net"[39m
+2023-08-02 23:32:11:3211 [32minfo[39m: [32m[[39m
+[32m  { path: '/', methods: [ 'GET' ], middlewares: [ 'anonymous' ] },[39m
+[32m  {[39m
+[32m    path: '/api/media/upload',[39m
+[32m    methods: [ 'POST' ],[39m
+[32m    middlewares: [ 'multerMiddleware', 'anonymous' ][39m
+[32m  },[39m
+[32m  {[39m
+[32m    path: '/api/contactAuth/signup',[39m
+[32m    methods: [ 'POST' ],[39m
+[32m    middlewares: [[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'anonymous'[39m
+[32m    ][39m
+[32m  },[39m
+[32m  {[39m
+[32m    path: '/api/contactAuth/signin',[39m
+[32m    methods: [ 'POST' ],[39m
+[32m    middlewares: [ 'middleware', 'middleware', 'anonymous' ][39m
+[32m  },[39m
+[32m  {[39m
+[32m    path: '/api/contact/create',[39m
+[32m    methods: [ 'POST' ],[39m
+[32m    middlewares: [[39m
+[32m      'anonymous',[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'anonymous'[39m
+[32m    ][39m
+[32m  },[39m
+[32m  {[39m
+[32m    path: '/api/contact',[39m
+[32m    methods: [ 'GET' ],[39m
+[32m    middlewares: [ 'anonymous', 'anonymous' ][39m
+[32m  },[39m
+[32m  {[39m
+[32m    path: '/api/contact/:id',[39m
+[32m    methods: [ 'PUT', 'DELETE' ],[39m
+[32m    middlewares: [ 'anonymous', 'anonymous' ][39m
+[32m  }[39m
+[32m][39m
+2023-08-02 23:32:11:3211 [32minfo[39m: [32mserver  is listening on port 5000[39m
+2023-08-02 23:32:15:3215 [32minfo[39m: [32mdatabase has been connected successfully to "ac-ngmjyow-shard-00-02.d8bojru.mongodb.net"[39m
+2023-08-02 23:38:01:381 [32minfo[39m: [32m[[39m
+[32m  { path: '/', methods: [ 'GET' ], middlewares: [ 'anonymous' ] },[39m
+[32m  {[39m
+[32m    path: '/api/media/upload',[39m
+[32m    methods: [ 'POST' ],[39m
+[32m    middlewares: [ 'multerMiddleware', 'anonymous' ][39m
+[32m  },[39m
+[32m  {[39m
+[32m    path: '/api/contactAuth/signup',[39m
+[32m    methods: [ 'POST' ],[39m
+[32m    middlewares: [[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'anonymous'[39m
+[32m    ][39m
+[32m  },[39m
+[32m  {[39m
+[32m    path: '/api/contactAuth/signin',[39m
+[32m    methods: [ 'POST' ],[39m
+[32m    middlewares: [ 'middleware', 'middleware', 'anonymous' ][39m
+[32m  },[39m
+[32m  {[39m
+[32m    path: '/api/contact/create',[39m
+[32m    methods: [ 'POST' ],[39m
+[32m    middlewares: [[39m
+[32m      'anonymous',[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'anonymous'[39m
+[32m    ][39m
+[32m  },[39m
+[32m  {[39m
+[32m    path: '/api/contact',[39m
+[32m    methods: [ 'GET' ],[39m
+[32m    middlewares: [ 'anonymous', 'anonymous' ][39m
+[32m  },[39m
+[32m  {[39m
+[32m    path: '/api/contact/:id',[39m
+[32m    methods: [ 'PUT', 'DELETE' ],[39m
+[32m    middlewares: [ 'anonymous', 'anonymous' ][39m
+[32m  }[39m
+[32m][39m
+2023-08-02 23:38:01:381 [32minfo[39m: [32mserver  is listening on port 5000[39m
+2023-08-02 23:38:06:386 [32minfo[39m: [32mdatabase has been connected successfully to "ac-ngmjyow-shard-00-00.d8bojru.mongodb.net"[39m
+2023-08-02 23:38:52:3852 [32minfo[39m: [32m[[39m
+[32m  { path: '/', methods: [ 'GET' ], middlewares: [ 'anonymous' ] },[39m
+[32m  {[39m
+[32m    path: '/api/media/upload',[39m
+[32m    methods: [ 'POST' ],[39m
+[32m    middlewares: [ 'multerMiddleware', 'anonymous' ][39m
+[32m  },[39m
+[32m  {[39m
+[32m    path: '/api/auth/signup',[39m
+[32m    methods: [ 'POST' ],[39m
+[32m    middlewares: [[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'anonymous'[39m
+[32m    ][39m
+[32m  },[39m
+[32m  {[39m
+[32m    path: '/api/auth/signin',[39m
+[32m    methods: [ 'POST' ],[39m
+[32m    middlewares: [ 'middleware', 'middleware', 'anonymous' ][39m
+[32m  },[39m
+[32m  {[39m
+[32m    path: '/api/contact/create',[39m
+[32m    methods: [ 'POST' ],[39m
+[32m    middlewares: [[39m
+[32m      'anonymous',[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'anonymous'[39m
+[32m    ][39m
+[32m  },[39m
+[32m  {[39m
+[32m    path: '/api/contact',[39m
+[32m    methods: [ 'GET' ],[39m
+[32m    middlewares: [ 'anonymous', 'anonymous' ][39m
+[32m  },[39m
+[32m  {[39m
+[32m    path: '/api/contact/:id',[39m
+[32m    methods: [ 'PUT', 'DELETE' ],[39m
+[32m    middlewares: [ 'anonymous', 'anonymous' ][39m
+[32m  }[39m
+[32m][39m
+2023-08-02 23:38:52:3852 [32minfo[39m: [32mserver  is listening on port 5000[39m
+2023-08-02 23:38:56:3856 [32minfo[39m: [32mdatabase has been connected successfully to "ac-ngmjyow-shard-00-00.d8bojru.mongodb.net"[39m
+2023-08-02 23:39:01:391 [31merror[39m: [31mError status 400[39m
+2023-08-02 23:39:01:391 [32minfo[39m: [32mLog error undefined[39m
+2023-08-02 23:39:01:391 [31merror[39m: [31mError status 400[39m
+2023-08-02 23:39:01:391 [32minfo[39m: [32mLog error undefined[39m
+2023-08-02 23:40:19:4019 [31merror[39m: [31mError status 400[39m
+2023-08-02 23:40:19:4019 [32minfo[39m: [32mLog error undefined[39m
+2023-08-02 23:40:31:4031 [31merror[39m: [31mError status 400[39m
+2023-08-02 23:40:31:4031 [32minfo[39m: [32mLog error undefined[39m
+2023-08-02 23:40:42:4042 [31merror[39m: [31mError status 400[39m
+2023-08-02 23:40:42:4042 [32minfo[39m: [32mLog error undefined[39m
+2023-08-02 23:40:55:4055 [31merror[39m: [31mError status 400[39m
+2023-08-02 23:40:55:4055 [32minfo[39m: [32mLog error undefined[39m
+2023-08-02 23:41:00:410 [31merror[39m: [31mError status 400[39m
+2023-08-02 23:41:00:410 [32minfo[39m: [32mLog error undefined[39m
+2023-08-02 23:41:17:4117 [31merror[39m: [31mError status 400[39m
+2023-08-02 23:41:17:4117 [32minfo[39m: [32mLog error undefined[39m
+2023-08-02 23:41:23:4123 [31merror[39m: [31mError status 400[39m
+2023-08-02 23:41:23:4123 [32minfo[39m: [32mLog error undefined[39m
+2023-08-02 23:42:07:427 [32minfo[39m: [32mLog error undefined[39m
+2023-08-02 23:43:34:4334 [31merror[39m: [31mError status 400[39m
+2023-08-02 23:43:34:4334 [32minfo[39m: [32mLog error undefined[39m
+2023-08-02 23:43:54:4354 [31merror[39m: [31mError status 400[39m
+2023-08-02 23:43:54:4354 [32minfo[39m: [32mLog error undefined[39m
+2023-08-02 23:45:43:4543 [31merror[39m: [31mAuthentication failed, no token was provided[39m
+2023-08-02 23:45:43:4543 [31merror[39m: [31mError status 403[39m
+2023-08-02 23:47:41:4741 [31merror[39m: [31mError status 400[39m
+2023-08-02 23:47:41:4741 [32minfo[39m: [32mLog error undefined[39m
+2023-08-02 23:48:01:481 [31merror[39m: [31mError status 400[39m
+2023-08-02 23:48:01:481 [32minfo[39m: [32mLog error undefined[39m
+2023-08-02 23:48:16:4816 [31merror[39m: [31mError status 400[39m
+2023-08-02 23:48:16:4816 [32minfo[39m: [32mLog error undefined[39m
+2023-08-02 23:49:09:499 [31merror[39m: [31muser name already exist[39m
+2023-08-02 23:49:09:499 [31merror[39m: [31mError status 400[39m
+2023-08-02 23:49:09:499 [32minfo[39m: [32mLog error undefined[39m
+2023-08-02 23:51:01:511 [31merror[39m: [31mAuthentication failed, no token was provided[39m
+2023-08-02 23:51:01:511 [31merror[39m: [31mError status 403[39m
+2023-08-02 23:54:51:5451 [32minfo[39m: [32m[[39m
+[32m  { path: '/', methods: [ 'GET' ], middlewares: [ 'anonymous' ] },[39m
+[32m  {[39m
+[32m    path: '/api/media/upload',[39m
+[32m    methods: [ 'POST' ],[39m
+[32m    middlewares: [ 'multerMiddleware', 'anonymous' ][39m
+[32m  },[39m
+[32m  {[39m
+[32m    path: '/api/auth/signup',[39m
+[32m    methods: [ 'POST' ],[39m
+[32m    middlewares: [[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'anonymous'[39m
+[32m    ][39m
+[32m  },[39m
+[32m  {[39m
+[32m    path: '/api/auth/signin',[39m
+[32m    methods: [ 'POST' ],[39m
+[32m    middlewares: [ 'middleware', 'middleware', 'anonymous' ][39m
+[32m  },[39m
+[32m  {[39m
+[32m    path: '/api/contact/create',[39m
+[32m    methods: [ 'POST' ],[39m
+[32m    middlewares: [[39m
+[32m      'anonymous',[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'anonymous'[39m
+[32m    ][39m
+[32m  },[39m
+[32m  {[39m
+[32m    path: '/api/contact',[39m
+[32m    methods: [ 'GET' ],[39m
+[32m    middlewares: [ 'anonymous', 'anonymous' ][39m
+[32m  },[39m
+[32m  {[39m
+[32m    path: '/api/contact/:id',[39m
+[32m    methods: [ 'PUT', 'DELETE' ],[39m
+[32m    middlewares: [ 'anonymous', 'anonymous' ][39m
+[32m  }[39m
+[32m][39m
+2023-08-02 23:54:51:5451 [32minfo[39m: [32mserver  is listening on port 5000[39m
+2023-08-02 23:55:07:557 [32minfo[39m: [32mdatabase has been connected successfully to "ac-ngmjyow-shard-00-00.d8bojru.mongodb.net"[39m
