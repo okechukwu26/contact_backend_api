@@ -3937,3 +3937,153 @@
 [32m][39m
 2023-08-02 23:54:51:5451 [32minfo[39m: [32mserver  is listening on port 5000[39m
 2023-08-02 23:55:07:557 [32minfo[39m: [32mdatabase has been connected successfully to "ac-ngmjyow-shard-00-00.d8bojru.mongodb.net"[39m
+2023-08-05 10:01:31:131 [32minfo[39m: [32m[[39m
+[32m  { path: '/', methods: [ 'GET' ], middlewares: [ 'anonymous' ] },[39m
+[32m  {[39m
+[32m    path: '/api/media/upload',[39m
+[32m    methods: [ 'POST' ],[39m
+[32m    middlewares: [ 'multerMiddleware', 'anonymous' ][39m
+[32m  },[39m
+[32m  {[39m
+[32m    path: '/api/auth/signup',[39m
+[32m    methods: [ 'POST' ],[39m
+[32m    middlewares: [[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'anonymous'[39m
+[32m    ][39m
+[32m  },[39m
+[32m  {[39m
+[32m    path: '/api/auth/signin',[39m
+[32m    methods: [ 'POST' ],[39m
+[32m    middlewares: [ 'middleware', 'middleware', 'anonymous' ][39m
+[32m  },[39m
+[32m  {[39m
+[32m    path: '/api/contact/create',[39m
+[32m    methods: [ 'POST' ],[39m
+[32m    middlewares: [[39m
+[32m      'anonymous',[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'anonymous'[39m
+[32m    ][39m
+[32m  },[39m
+[32m  {[39m
+[32m    path: '/api/contact',[39m
+[32m    methods: [ 'GET' ],[39m
+[32m    middlewares: [ 'anonymous', 'anonymous' ][39m
+[32m  },[39m
+[32m  {[39m
+[32m    path: '/api/contact/:id',[39m
+[32m    methods: [ 'PUT', 'DELETE' ],[39m
+[32m    middlewares: [ 'anonymous', 'anonymous' ][39m
+[32m  }[39m
+[32m][39m
+2023-08-05 10:01:31:131 [32minfo[39m: [32mserver  is listening on port 5000[39m
+2023-08-05 10:01:34:134 [32minfo[39m: [32mdatabase has been connected successfully to "ac-ngmjyow-shard-00-02.d8bojru.mongodb.net"[39m
+2023-08-05 13:42:58:4258 [32minfo[39m: [32m[[39m
+[32m  { path: '/', methods: [ 'GET' ], middlewares: [ 'anonymous' ] },[39m
+[32m  {[39m
+[32m    path: '/api/media/upload',[39m
+[32m    methods: [ 'POST' ],[39m
+[32m    middlewares: [ 'multerMiddleware', 'anonymous' ][39m
+[32m  },[39m
+[32m  {[39m
+[32m    path: '/api/auth/signup',[39m
+[32m    methods: [ 'POST' ],[39m
+[32m    middlewares: [[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'anonymous'[39m
+[32m    ][39m
+[32m  },[39m
+[32m  {[39m
+[32m    path: '/api/auth/signin',[39m
+[32m    methods: [ 'POST' ],[39m
+[32m    middlewares: [ 'middleware', 'middleware', 'anonymous' ][39m
+[32m  },[39m
+[32m  {[39m
+[32m    path: '/api/contact/create',[39m
+[32m    methods: [ 'POST' ],[39m
+[32m    middlewares: [[39m
+[32m      'anonymous',[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'anonymous'[39m
+[32m    ][39m
+[32m  },[39m
+[32m  {[39m
+[32m    path: '/api/contact',[39m
+[32m    methods: [ 'GET' ],[39m
+[32m    middlewares: [ 'anonymous', 'anonymous' ][39m
+[32m  },[39m
+[32m  {[39m
+[32m    path: '/api/contact/:id',[39m
+[32m    methods: [ 'PUT', 'DELETE' ],[39m
+[32m    middlewares: [ 'anonymous', 'anonymous' ][39m
+[32m  }[39m
+[32m][39m
+2023-08-05 13:42:58:4258 [32minfo[39m: [32mserver  is listening on port 5000[39m
+2023-08-05 13:43:01:431 [32minfo[39m: [32mdatabase has been connected successfully to "ac-ngmjyow-shard-00-00.d8bojru.mongodb.net"[39m
+2023-08-05 22:52:44:5244 [32minfo[39m: [32m[[39m
+[32m  { path: '/', methods: [ 'GET' ], middlewares: [ 'anonymous' ] },[39m
+[32m  {[39m
+[32m    path: '/api/media/upload',[39m
+[32m    methods: [ 'POST' ],[39m
+[32m    middlewares: [ 'multerMiddleware', 'anonymous' ][39m
+[32m  },[39m
+[32m  {[39m
+[32m    path: '/api/auth/signup',[39m
+[32m    methods: [ 'POST' ],[39m
+[32m    middlewares: [[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'anonymous'[39m
+[32m    ][39m
+[32m  },[39m
+[32m  {[39m
+[32m    path: '/api/auth/signin',[39m
+[32m    methods: [ 'POST' ],[39m
+[32m    middlewares: [ 'middleware', 'middleware', 'anonymous' ][39m
+[32m  },[39m
+[32m  {[39m
+[32m    path: '/api/contact/create',[39m
+[32m    methods: [ 'POST' ],[39m
+[32m    middlewares: [[39m
+[32m      'anonymous',[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'anonymous'[39m
+[32m    ][39m
+[32m  },[39m
+[32m  {[39m
+[32m    path: '/api/contact',[39m
+[32m    methods: [ 'GET' ],[39m
+[32m    middlewares: [ 'anonymous', 'anonymous' ][39m
+[32m  },[39m
+[32m  {[39m
+[32m    path: '/api/contact/:id',[39m
+[32m    methods: [ 'PUT', 'DELETE' ],[39m
+[32m    middlewares: [ 'anonymous', 'anonymous' ][39m
+[32m  }[39m
+[32m][39m
+2023-08-05 22:52:44:5244 [32minfo[39m: [32mserver  is listening on port 5000[39m
+2023-08-05 22:52:47:5247 [32minfo[39m: [32mdatabase has been connected successfully to "ac-ngmjyow-shard-00-02.d8bojru.mongodb.net"[39m

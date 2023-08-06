@@ -18,6 +18,7 @@ export const email = check("email")
   .not()
   .trim()
   .isEmpty()
+  .toLowerCase()
   .withMessage("email is required")
   .isEmail()
   .withMessage("invalid email address");
