@@ -12,7 +12,7 @@ export class ContactAuthMiddleware {
         const token = req.headers["authorization"];
         if (!token) {
           logger.error("Authentication failed, no token was provided");
-          throwError("Authentication failed, no token was provided", 403);
+          throwError("Authentication failed, no token was provided", 401);
         }
 
         const result = await Jwt.verify(token as string);
@@ -24,12 +24,12 @@ export class ContactAuthMiddleware {
             active: true,
             _id: result._id,
           });
-          // const currentDate = new Date().getTime()
+          const currentDate = new Date().getTime();
 
-          // if (currentDate < result.exp) {
-          //   logger.error('Token expired')
-          //   throwError('token expired', 400)
-          // }
+          if (currentDate < result.exp) {
+            logger.error("Token expired");
+            throwError("token expired", 403);
+          }
 
           req.user = decode._id;
           next();
@@ -37,9 +37,9 @@ export class ContactAuthMiddleware {
       } catch ({ message, code }) {
         return badRequest(
           res,
-          code || 402,
+          code || 400,
           message || "authentication failed, invalid token",
-          next
+          next,
         );
       }
     };
