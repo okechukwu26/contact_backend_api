@@ -27,3 +27,18 @@
 2023-08-02 23:49:09:499 [31merror[39m: [31mError status 400[39m
 2023-08-02 23:51:01:511 [31merror[39m: [31mAuthentication failed, no token was provided[39m
 2023-08-02 23:51:01:511 [31merror[39m: [31mError status 403[39m
+2023-08-06 15:44:55:4455 [31merror[39m: [31mToken expired[39m
+2023-08-06 15:44:55:4455 [31merror[39m: [31mError status 403[39m
+2023-08-06 15:45:43:4543 [31merror[39m: [31mToken expired[39m
+2023-08-06 15:45:43:4543 [31merror[39m: [31mError status 403[39m
+2023-08-06 15:46:07:467 [31merror[39m: [31mToken expired[39m
+2023-08-06 15:46:07:467 [31merror[39m: [31mError status 403[39m
+2023-08-06 16:14:51:1451 [31merror[39m: [31mError status 400[39m
+2023-08-06 16:15:49:1549 [31merror[39m: [31mError status 400[39m
+2023-08-06 16:16:21:1621 [31merror[39m: [31mAuthentication failed, no token was provided[39m
+2023-08-06 16:16:21:1621 [31merror[39m: [31mError status 401[39m
+2023-08-06 16:16:28:1628 [31merror[39m: [31mError status 400[39m
+2023-08-06 16:17:30:1730 [31merror[39m: [31mError status 403[39m
+2023-08-06 16:48:41:4841 [31merror[39m: [31mError status 403[39m
+2023-08-06 16:50:34:5034 [31merror[39m: [31mToken expired[39m
+2023-08-06 16:50:34:5034 [31merror[39m: [31mError status 403[39m
