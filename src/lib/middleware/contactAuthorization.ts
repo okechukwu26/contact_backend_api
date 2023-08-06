@@ -1,3 +1,4 @@
+/* eslint-disable no-console */
 import { Response, NextFunction } from "express";
 import { ContactAuth } from "../../components/auth/model";
 import { ResponseHandler, logger } from "../helper";
@@ -26,7 +27,8 @@ export class ContactAuthMiddleware {
           });
           const currentDate = new Date().getTime();
 
-          if (currentDate < result.exp) {
+          const TokenLife = result.exp * 1000;
+          if (currentDate > TokenLife) {
             logger.error("Token expired");
             throwError("token expired", 403);
           }
