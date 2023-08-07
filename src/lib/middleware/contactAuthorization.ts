@@ -13,7 +13,7 @@ export class ContactAuthMiddleware {
         const token = req.headers["authorization"];
         if (!token) {
           logger.error("Authentication failed, no token was provided");
-          throwError("Authentication failed, no token was provided", 403);
+          throwError("Unauthorized no token was provided", 403);
         }
 
         const result = await Jwt.verify(token as string);
