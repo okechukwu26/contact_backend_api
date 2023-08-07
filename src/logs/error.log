@@ -42,3 +42,5 @@
 2023-08-06 16:48:41:4841 [31merror[39m: [31mError status 403[39m
 2023-08-06 16:50:34:5034 [31merror[39m: [31mToken expired[39m
 2023-08-06 16:50:34:5034 [31merror[39m: [31mError status 403[39m
+2023-08-08 00:39:27:3927 [31merror[39m: [31mcontact does not exists[39m
+2023-08-08 00:39:27:3927 [31merror[39m: [31mError status 400[39m
