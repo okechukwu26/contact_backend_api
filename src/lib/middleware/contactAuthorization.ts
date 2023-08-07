@@ -13,13 +13,13 @@ export class ContactAuthMiddleware {
         const token = req.headers["authorization"];
         if (!token) {
           logger.error("Authentication failed, no token was provided");
-          throwError("Authentication failed, no token was provided", 401);
+          throwError("Authentication failed, no token was provided", 403);
         }
 
         const result = await Jwt.verify(token as string);
 
         if (typeof result === "string") {
-          throwError("invalid typeof for token", 400);
+          throwError("invalid typeof for token", 403);
         } else {
           const decode = await ContactAuth.findOne({
             active: true,
@@ -39,7 +39,7 @@ export class ContactAuthMiddleware {
       } catch ({ message, code }) {
         return badRequest(
           res,
-          code || 400,
+          code || 403,
           message || "authentication failed, invalid token",
           next,
         );

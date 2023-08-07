@@ -6,7 +6,7 @@ const { throwError } = ResponseHandler;
 
 export class Jwt {
   static async encoded(payload: Record<string, unknown> | string) {
-    return jwtToken.sign(payload, APP_SECRET, { expiresIn: "48hrs" });
+    return jwtToken.sign(payload, APP_SECRET, { expiresIn: "24hrs" });
   }
   static async decoded(token: string) {
     return jwtToken.decode(token);
