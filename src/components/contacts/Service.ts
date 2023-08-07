@@ -31,8 +31,10 @@ export class Service {
       throwError("contact does not exist", 400);
     }
 
-    await Contacts.findOneAndUpdate({ _id, user }, input, { new: true });
-    return "contact updated";
+    const update = await Contacts.findOneAndUpdate({ _id, user }, input, {
+      new: true,
+    });
+    return update;
   }
 
   static async delete(query: ICreateContact, _id, user) {

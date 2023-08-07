@@ -4901,3 +4901,57 @@
 [32m][39m
 2023-08-06 16:51:55:5155 [32minfo[39m: [32mserver  is listening on port 5000[39m
 2023-08-06 16:51:57:5157 [32minfo[39m: [32mdatabase has been connected successfully to "ac-ngmjyow-shard-00-00.d8bojru.mongodb.net"[39m
+2023-08-08 00:35:29:3529 [32minfo[39m: [32m[[39m
+[32m  { path: '/', methods: [ 'GET' ], middlewares: [ 'anonymous' ] },[39m
+[32m  {[39m
+[32m    path: '/api/media/upload',[39m
+[32m    methods: [ 'POST' ],[39m
+[32m    middlewares: [ 'multerMiddleware', 'anonymous' ][39m
+[32m  },[39m
+[32m  {[39m
+[32m    path: '/api/auth/signup',[39m
+[32m    methods: [ 'POST' ],[39m
+[32m    middlewares: [[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'anonymous'[39m
+[32m    ][39m
+[32m  },[39m
+[32m  {[39m
+[32m    path: '/api/auth/signin',[39m
+[32m    methods: [ 'POST' ],[39m
+[32m    middlewares: [ 'middleware', 'middleware', 'anonymous' ][39m
+[32m  },[39m
+[32m  {[39m
+[32m    path: '/api/contact/create',[39m
+[32m    methods: [ 'POST' ],[39m
+[32m    middlewares: [[39m
+[32m      'anonymous',[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'middleware',[39m
+[32m      'anonymous'[39m
+[32m    ][39m
+[32m  },[39m
+[32m  {[39m
+[32m    path: '/api/contact',[39m
+[32m    methods: [ 'GET' ],[39m
+[32m    middlewares: [ 'anonymous', 'anonymous' ][39m
+[32m  },[39m
+[32m  {[39m
+[32m    path: '/api/contact/:id',[39m
+[32m    methods: [ 'PUT', 'DELETE' ],[39m
+[32m    middlewares: [ 'anonymous', 'anonymous' ][39m
+[32m  }[39m
+[32m][39m
+2023-08-08 00:35:29:3529 [32minfo[39m: [32mserver  is listening on port 5000[39m
+2023-08-08 00:35:32:3532 [32minfo[39m: [32mdatabase has been connected successfully to "ac-ngmjyow-shard-00-01.d8bojru.mongodb.net"[39m
+2023-08-08 00:38:51:3851 [32minfo[39m: [32mLog error undefined[39m
+2023-08-08 00:39:27:3927 [31merror[39m: [31mcontact does not exists[39m
+2023-08-08 00:39:27:3927 [31merror[39m: [31mError status 400[39m
+2023-08-08 00:39:27:3927 [32minfo[39m: [32mLog error undefined[39m

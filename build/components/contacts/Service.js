@@ -43,8 +43,10 @@ class Service {
                 helper_1.logger.error("contact does not exists");
                 throwError("contact does not exist", 400);
             }
-            yield model_1.Contacts.findOneAndUpdate({ _id, user }, input, { new: true });
-            return "contact updated";
+            const update = yield model_1.Contacts.findOneAndUpdate({ _id, user }, input, {
+                new: true,
+            });
+            return update;
         });
     }
     static delete(query, _id, user) {
