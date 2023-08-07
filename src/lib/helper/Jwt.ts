@@ -17,7 +17,7 @@ export class Jwt {
       const result = jwtToken.verify(token, APP_SECRET);
       return result;
     } catch (error) {
-      throwError("Token expired", error.code || 403);
+      throwError("token expired", 403);
     }
   }
 }
