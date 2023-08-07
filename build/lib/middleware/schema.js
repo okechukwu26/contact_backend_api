@@ -19,6 +19,7 @@ exports.email = (0, express_validator_1.check)("email")
     .not()
     .trim()
     .isEmpty()
+    .toLowerCase()
     .withMessage("email is required")
     .isEmail()
     .withMessage("invalid email address");
