@@ -20,7 +20,7 @@ const { throwError } = Response_1.ResponseHandler;
 class Jwt {
     static encoded(payload) {
         return __awaiter(this, void 0, void 0, function* () {
-            return jsonwebtoken_1.default.sign(payload, config_1.APP_SECRET, { expiresIn: "48hrs" });
+            return jsonwebtoken_1.default.sign(payload, config_1.APP_SECRET, { expiresIn: "24hrs" });
         });
     }
     static decoded(token) {
@@ -35,7 +35,7 @@ class Jwt {
                 return result;
             }
             catch (error) {
-                throwError("Token expired", error.code || 400);
+                throwError("token expired", 403);
             }
         });
     }

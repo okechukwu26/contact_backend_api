@@ -24,27 +24,28 @@ ContactAuthMiddleware.Authenticate = () => (req, res, next) => __awaiter(void 0,
         const token = req.headers["authorization"];
         if (!token) {
             helper_1.logger.error("Authentication failed, no token was provided");
-            throwError("Authentication failed, no token was provided", 403);
+            throwError("Unauthorized no token was provided", 403);
         }
         const result = yield helper_2.Jwt.verify(token);
         if (typeof result === "string") {
-            throwError("invalid typeof for token", 400);
+            throwError("invalid typeof for token", 403);
         }
         else {
             const decode = yield model_1.ContactAuth.findOne({
                 active: true,
                 _id: result._id,
             });
-            // const currentDate = new Date().getTime()
-            // if (currentDate < result.exp) {
-            //   logger.error('Token expired')
-            //   throwError('token expired', 400)
-            // }
+            const currentDate = new Date().getTime();
+            const TokenLife = result.exp * 1000;
+            if (currentDate > TokenLife) {
+                helper_1.logger.error("Token expired");
+                throwError("token expired", 403);
+            }
             req.user = decode._id;
             next();
         }
     }
     catch ({ message, code }) {
-        return badRequest(res, code || 402, message || "authentication failed, invalid token", next);
+        return badRequest(res, code || 403, message || "authentication failed, invalid token", next);
     }
 });
